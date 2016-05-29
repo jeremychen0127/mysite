@@ -1,0 +1,121 @@
+/* header styles start*/
+
+.resume-header {
+    margin-left: 30px;
+    margin-right: 20px;
+    height: 180px;
+}
+
+.resume-header * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.basic-info {
+    width: 460px;
+}
+
+.basic-info h1 {
+    font-size: 40px;
+}
+
+.basic-info p {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.more-info {
+    width: 300px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.info {
+    width: 300px;
+}
+
+.info * {
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.odd-row {
+    background-color: #CECECE;
+}
+
+.glyphicon {
+    width: 30px;
+    font-size: 20px;
+    margin-right: 2px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* Sections styles start */
+.section {
+    width: 830px;
+}
+
+.section-title {
+    background-color: #646464;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.skill-set {
+    width: 380px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.skill-set h4 {
+    margin-bottom: 0px;
+    border-left: solid;
+    border-color: #646464;
+    padding-left: 5px;
+}
+
+.skill-set p {
+    padding-left: 8px;
+}
+
+.section-entry {
+    margin-left: 20px;
+}
+
+.section-entry h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.entry-title {
+    width: 380px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.entry-title h4 {
+    border-left: solid;
+    border-color: #646464;
+    padding-left: 5px;
+}
+
+.entry-title a {
+    color: #323232;
+}
+
+.company {
+    padding-left: 8px;
+    margin-bottom: 5px;
+}
+
+.date {
+    width: 400px;
+    display: inline-block;
+    text-align:right;
+}
