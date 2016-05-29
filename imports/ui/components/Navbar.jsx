@@ -11,17 +11,29 @@ export default class Navbar extends Component {
   }
 
   handleActive(tab) {
-    console.log(tab);
     FlowRouter.go(tab.props.value);
   }
 
   render() {
+    let tabContainerStyle = {
+      backgroundColor: '#FFFFFF'
+    };
+    let tabStyle = {
+      color: '#424242'
+    };
+    let inkBarStyle = {
+      backgroundColor: '#616161'
+    };
     return (
-      <Tabs>
-        <Tab label="Projects" value="projects" onActive={this.handleActive.bind(this)}/>
-        <Tab label="About Me" value="about" onActive={this.handleActive.bind(this)}/>
-        <Tab label="Resume" value="resume" onActive={this.handleActive.bind(this)}/>
-      </Tabs>
+      <div className="row center">
+        <div className="col m6 offset-m3 s12">
+          <Tabs tabItemContainerStyle={tabContainerStyle} inkBarStyle={inkBarStyle}>
+            <Tab style={tabStyle} label="Projects" value="projects" onActive={this.handleActive.bind(this)}/>
+            <Tab style={tabStyle} label="Projects" label="About Me" value="about" onActive={this.handleActive.bind(this)}/>
+            <Tab style={tabStyle} label="Projects" label="Resume" value="resume" onActive={this.handleActive.bind(this)}/>
+          </Tabs>
+        </div>
+      </div>
     );
   }
 }
