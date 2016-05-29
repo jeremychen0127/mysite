@@ -16,7 +16,7 @@ export default class Navbar extends Component {
 
   render() {
     let tabContainerStyle = {
-      backgroundColor: '#FFFFFF'
+      backgroundColor: 'inherit'
     };
     let tabStyle = {
       color: '#424242'
