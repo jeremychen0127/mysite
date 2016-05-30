@@ -28,9 +28,9 @@ export default class Navbar extends Component {
       <div className="row center">
         <div className="col m6 offset-m3 s12">
           <Tabs tabItemContainerStyle={tabContainerStyle} inkBarStyle={inkBarStyle}>
+            <Tab style={tabStyle} label="About Me" value="about" onActive={this.handleActive.bind(this)}/>
             <Tab style={tabStyle} label="Projects" value="projects" onActive={this.handleActive.bind(this)}/>
-            <Tab style={tabStyle} label="Projects" label="About Me" value="about" onActive={this.handleActive.bind(this)}/>
-            <Tab style={tabStyle} label="Projects" label="Resume" value="resume" onActive={this.handleActive.bind(this)}/>
+            <Tab style={tabStyle} label="Resume" value="resume" onActive={this.handleActive.bind(this)}/>
           </Tabs>
         </div>
       </div>
