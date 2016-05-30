@@ -56,10 +56,6 @@ body {
 }
 
 /* Sections styles start */
-.section {
-    width: 830px;
-}
-
 .section-title {
     background-color: #646464;
     color: #FFFFFF;
@@ -71,7 +67,6 @@ body {
 }
 
 .skill-set {
-    width: 380px;
     display: inline-block;
     vertical-align: top;
     margin-left: 20px;
@@ -97,12 +92,6 @@ body {
     margin-bottom: 0px;
 }
 
-.entry-title {
-    width: 380px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
 .entry-title h4 {
     border-left: solid;
     border-color: #646464;
@@ -114,12 +103,9 @@ body {
 }
 
 .company {
-    padding-left: 8px;
-    margin-bottom: 5px;
+    padding-left: 0.75rem;
 }
 
-.date {
-    width: 400px;
-    display: inline-block;
-    text-align:right;
+.description {
+    padding-left: 0.75rem;
 }
