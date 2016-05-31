@@ -10,6 +10,10 @@ export default class Navbar extends Component {
     return {muiTheme: getMuiTheme(baseTheme)};
   }
 
+  handleChange(value) {
+    this.setState({currentTab: value});
+  }
+
   handleActive(tab) {
     FlowRouter.go(tab.props.value);
   }
@@ -24,10 +28,11 @@ export default class Navbar extends Component {
     let inkBarStyle = {
       backgroundColor: '#616161'
     };
+
     return (
       <div className="row center">
         <div className="col m6 offset-m3 s12">
-          <Tabs tabItemContainerStyle={tabContainerStyle} inkBarStyle={inkBarStyle}>
+          <Tabs value={FlowRouter.getRouteName()} onChange={this.handleChange.bind(this)} tabItemContainerStyle={tabContainerStyle} inkBarStyle={inkBarStyle}>
             <Tab style={tabStyle} label="About Me" value="about" onActive={this.handleActive.bind(this)}/>
             <Tab style={tabStyle} label="Projects" value="projects" onActive={this.handleActive.bind(this)}/>
             <Tab style={tabStyle} label="Resume" value="resume" onActive={this.handleActive.bind(this)}/>
@@ -39,5 +44,5 @@ export default class Navbar extends Component {
 }
 
 Navbar.childContextTypes = {
-  muiTheme: React.PropTypes.object.isRequired,
+  muiTheme: React.PropTypes.object.isRequired
 };

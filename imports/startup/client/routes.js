@@ -8,9 +8,9 @@ import ProjectOverview from '../../ui/pages/ProjectOverview';
 import Resume from '../../ui/pages/Resume';
 
 FlowRouter.route('/', {
-  name: 'projects',
+  name: 'index',
   action() {
-    mount(Layout, {content: <ProjectOverview />});
+    mount(Layout, {content: <AboutMe />});
   }
 });
 
@@ -18,6 +18,13 @@ FlowRouter.route('/about', {
   name: 'about',
   action() {
     mount(Layout, {content: <AboutMe />});
+  }
+});
+
+FlowRouter.route('/project', {
+  name: 'projects',
+  action() {
+    mount(Layout, {content: <ProjectOverview />});
   }
 });
 

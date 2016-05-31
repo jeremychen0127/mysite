@@ -6,7 +6,7 @@ export const Layout =  ({content}) => (
   <div className="app-root">
     <br />
     <Logo />
-    <Navbar/>
+    <Navbar />
     <div className="container">
       {content}
     </div>
