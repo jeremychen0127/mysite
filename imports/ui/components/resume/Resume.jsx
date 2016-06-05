@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 var style = {
   reducedBottomMargin: {
-    marginBottom: '10px'
+    marginBottom: '7px'
   },
   entryTitleStyle: {
     paddingLeft: '0px'
@@ -21,37 +21,38 @@ export default class Resume extends Component {
         <div className="row">
           <div className="col m6 s12 skill-set">
             <h4><b>Languages</b></h4>
-            <p>
-              Proficient: Java, C/C++, Shell Script<br />
-              Intermediate: HTML5, CSS, SQL, Python, Perl
-            </p>
+            <ul>
+              <li>Proficient: Java, C/C++, Javascript</li>
+              <li>Intermediate: HTML5, CSS, SQL, Python, Perl, Shell</li>
+            </ul>
           </div>
 
           <div className="col m6 s12 skill-set">
             <h4><b>OS and Tools</b></h4>
-            <p>
-              Familiar with Linux and Windows<br />
-              Experience with Git, IntelliJ, and Vim
-            </p>
+            <ul>
+              <li>Familiar with Linux, OS X, and Windows</li>
+              <li>Experienced with Git, IntelliJ, and Vim</li>
+            </ul>
           </div>
         </div>
 
         <div className="row">
           <div className="col m6 s12 skill-set">
-            <h4><b>Frontend & Backend Development</b></h4>
-            <p>
-              Experience with Bootstrap<br />
-              Good understanding of Django<br />
-              Excellent at relational databases and NoSQL: MySQL, MariaDB, Cassandra
-            </p>
+            <h4><b>Web Development</b></h4>
+            <ul>
+              <li>Experience in Materialize, Material UI, and Bootstrap</li>
+              <li>In-depth knowledge of React and JQuery</li>
+              <li>Experienced with Meteor and Node.js</li>
+              <li>Strong knowledge of MySQL, MongoDB</li>
+            </ul>
           </div>
 
           <div className="col m6 s12 skill-set">
-            <h4><b>General Soft Skills</b></h4>
-            <p>
-              Detailed-oriented person who is willing to take responsibilities<br />
-              Excellent group-working and communication skills
-            </p>
+            <h4><b>Software Engineering & Others</b></h4>
+            <ul>
+              <li>Familiar with TCP/IP concepts</li>
+              <li>Excellent understanding of OOP, design patterns, and agile methodology</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -244,7 +245,7 @@ export default class Resume extends Component {
   
   render() {
     return (
-      <div>
+      <div className="resume">
         <br />
         {this.renderSummaryOfQualifications()}
         {this.renderWorkExperience()}
