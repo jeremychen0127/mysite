@@ -9,9 +9,9 @@ import Resume from '../../ui/pages/Resume';
 
 FlowRouter.route('/', {
   name: 'index',
-  action() {
-    mount(Layout, {content: <AboutMe />});
-  }
+  triggersEnter: [function(context, redirect) {
+    redirect('/about');
+  }]
 });
 
 FlowRouter.route('/about', {
