@@ -11,7 +11,8 @@ var styles = {
   },
   aboutMeCard: {
     backgroundColor: '#fafafa',
-    color: '#455a64'
+    color: '#455a64',
+    borderRadius: '20px',
   }
 };
 
@@ -69,7 +70,7 @@ export default class AboutMe extends Component {
 
   renderWhoAmI() {
     return (
-      <div className="hoverable center">
+      <div className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">
@@ -91,7 +92,7 @@ export default class AboutMe extends Component {
 
   renderBecameGeek() {
     return (
-      <div className="hoverable center">
+      <div className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">
@@ -116,7 +117,7 @@ export default class AboutMe extends Component {
 
   renderWhatIDo() {
     return (
-      <div className="hoverable center">
+      <div className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">

@@ -14,13 +14,13 @@ export default class Resume extends Component {
       <div>
         <div className="row">
           <div className="section-title">
-            <h3><b>Summary of Qualifications</b></h3>
+            <h5><b>Summary of Qualifications</b></h5>
           </div>
         </div>
 
         <div className="row">
           <div className="col m6 s12 skill-set">
-            <h4><b>Languages</b></h4>
+            <h5><b>Languages</b></h5>
             <ul>
               <li>Proficient: Java, C/C++, Javascript</li>
               <li>Intermediate: HTML5, CSS, SQL, Python, Perl, Shell</li>
@@ -28,7 +28,7 @@ export default class Resume extends Component {
           </div>
 
           <div className="col m6 s12 skill-set">
-            <h4><b>OS and Tools</b></h4>
+            <h5><b>OS and Tools</b></h5>
             <ul>
               <li>Familiar with Linux, OS X, and Windows</li>
               <li>Experienced with Git, IntelliJ, and Vim</li>
@@ -38,7 +38,7 @@ export default class Resume extends Component {
 
         <div className="row">
           <div className="col m6 s12 skill-set">
-            <h4><b>Web Development</b></h4>
+            <h5><b>Web Development</b></h5>
             <ul>
               <li>Experience in Materialize, Material UI, and Bootstrap</li>
               <li>In-depth knowledge of React and JQuery</li>
@@ -48,7 +48,7 @@ export default class Resume extends Component {
           </div>
 
           <div className="col m6 s12 skill-set">
-            <h4><b>Software Engineering & Others</b></h4>
+            <h5><b>Software Engineering & Others</b></h5>
             <ul>
               <li>Familiar with TCP/IP concepts</li>
               <li>Excellent understanding of OOP, design patterns, and agile methodology</li>
@@ -64,27 +64,27 @@ export default class Resume extends Component {
       <div>
         <div className="row">
           <div className="section-title">
-            <h3><b>Work Experience</b></h3>
+            <h5><b>Work Experience</b></h5>
           </div>
         </div>
 
         <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="col m6 s12 entry-title" style={style.entryTitleStyle}>
-              <h4><b>Software Developer Co-op</b></h4>
+              <h5><b>Software Developer Co-op</b></h5>
             </div>
             <div className="col m6 s12">
               <div className="right hide-on-small-only">
-                <h4>Jan. 2015 - Apr. 2015</h4>
+                <h5>Jan. 2015 - Apr. 2015</h5>
               </div>
               <div className="hide-on-med-and-up">
-                <h4>Jan. 2015 - Apr. 2015</h4>
+                <h5>Jan. 2015 - Apr. 2015</h5>
               </div>
             </div>
           </div>
 
           <div className="row company" style={style.reducedBottomMargin}>
-            <h4>NCR Canada Limited, Waterloo, ON</h4>
+            <h5>NCR Canada Limited, Waterloo, ON</h5>
           </div>
 
           <div className="row description">
@@ -100,20 +100,20 @@ export default class Resume extends Component {
         <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="col m6 s12 entry-title" style={style.entryTitleStyle}>
-              <h4><b>Restaurant Waiter</b></h4>
+              <h5><b>Restaurant Waiter</b></h5>
             </div>
             <div className="col m6 s12">
               <div className="right hide-on-small-only">
-                <h4>Mar. 2013 - Jul. 2013</h4>
+                <h5>Mar. 2013 - Jul. 2013</h5>
               </div>
               <div className="hide-on-med-and-up">
-                <h4>Mar. 2013 - Jul. 2013</h4>
+                <h5>Mar. 2013 - Jul. 2013</h5>
               </div>
             </div>
           </div>
 
           <div className="row company" style={style.reducedBottomMargin}>
-            <h4>Empire Garden Restaurant, Langley, BC</h4>
+            <h5>Empire Garden Restaurant, Langley, BC</h5>
           </div>
 
           <div className="row description">
@@ -133,14 +133,14 @@ export default class Resume extends Component {
       <div>
         <div className="row">
           <div className="section-title">
-            <h3><b>Projects</b></h3>
+            <h5><b>Projects</b></h5>
           </div>
         </div>
 
         <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="entry-title" style={style.entryTitleStyle}>
-              <h4><b>Building Buyer 7000 (Monopoly)</b></h4>
+              <h5><b>Building Buyer 7000 (Monopoly)</b></h5>
             </div>
           </div>
 
@@ -154,7 +154,7 @@ export default class Resume extends Component {
 
         <div className="section-entry">
           <div className="row entry-title" style={style.reducedBottomMargin}>
-            <h4><b>Personal Website <a href="https://github.com/jeremychen0127/mysite" target="_blank">@GitHub</a></b></h4>
+            <h5><b>Personal Website <a href="https://github.com/jeremychen0127/mysite" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
             <li>Designed and implemented my personal website using HTML, CSS, and JavaScript(JQuery)</li>
@@ -169,27 +169,27 @@ export default class Resume extends Component {
       <div>
         <div className="row">
           <div className="section-title">
-            <h3><b>Education</b></h3>
+            <h5><b>Education</b></h5>
           </div>
         </div>
 
         <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="col m8 s12 entry-title" style={style.entryTitleStyle}>
-              <h4><b>Candidate for Bachelor of Computer Science</b></h4>
+              <h5><b>Candidate for Bachelor of Computer Science</b></h5>
             </div>
             <div className="col m4 s12">
               <div className="right hide-on-small-only">
-                <h4>Sept. 2013 - Present</h4>
+                <h5>Sept. 2013 - Present</h5>
               </div>
               <div className="hide-on-med-and-up">
-                <h4>Sept. 2013 - Present</h4>
+                <h5>Sept. 2013 - Present</h5>
               </div>
             </div>
           </div>
 
           <div className="row company" style={style.reducedBottomMargin}>
-            <h4>Co-operative Program, University of Waterloo, Waterloo, ON</h4>
+            <h5>Co-operative Program, University of Waterloo, Waterloo, ON</h5>
           </div>
 
           <div className="row description">
@@ -208,27 +208,27 @@ export default class Resume extends Component {
       <div>
         <div className="row">
           <div className="section-title">
-            <h3><b>Activities</b></h3>
+            <h5><b>Activities</b></h5>
           </div>
         </div>
 
         <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="col m8 s12 entry-title" style={style.entryTitleStyle}>
-              <h4><b>Fellowship Executive (Coordinator & Chair)</b></h4>
+              <h5><b>Fellowship Executive (Coordinator & Chair)</b></h5>
             </div>
             <div className="col m4 s12">
               <div className="right hide-on-small-only">
-                <h4>Jan. 2014 - Present</h4>
+                <h5>Jan. 2014 - Present</h5>
               </div>
               <div className="hide-on-med-and-up">
-                <h4>Jan. 2014 - Present</h4>
+                <h5>Jan. 2014 - Present</h5>
               </div>
             </div>
           </div>
 
           <div className="row company" style={style.reducedBottomMargin}>
-            <h4>Mandarin Chinese Christian Fellowship, University of Waterloo, Waterloo, ON</h4>
+            <h5>Mandarin Chinese Christian Fellowship, University of Waterloo, Waterloo, ON</h5>
           </div>
 
           <div className="row description">
