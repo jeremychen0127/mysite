@@ -15,10 +15,6 @@ body {
     font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
 
-.resume h4 {
-    color: #37474f;
-}
-
 .resume-header {
     margin-left: 30px;
     margin-right: 20px;
@@ -72,7 +68,7 @@ body {
 
 /* Sections styles start */
 .section-title {
-    background-color: #607d8b;
+    background-color: #7294a2;
     color: #FFFFFF;
     text-align: center;
     padding-top: 2px;
@@ -87,11 +83,13 @@ body {
     vertical-align: top;
 }
 
-.skill-set h4 {
+.skill-set h5 {
     margin-bottom: 8px;
     border-left: solid;
-    border-color: #607d8b;
+    border-color: #425761;
     padding-left: 5px;
+    font-size: 20px;
+    color: #425761;
 }
 
 .skill-set p {
@@ -102,19 +100,23 @@ body {
     padding-left: 8px;
 }
 
-.section-entry h4 {
+.section-entry h5 {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 18px;
+    color: #425761;
 }
 
-.entry-title h4 {
+.entry-title h5 {
     border-left: solid;
-    border-color: #607d8b;
+    border-color: #425761;
     padding-left: 5px;
+    font-size: 20px;
+    color: #425761;
 }
 
 .entry-title a {
-    color: #323232;
+    color: #425761;
 }
 
 .company {
