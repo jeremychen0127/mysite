@@ -5,10 +5,14 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Paper from 'material-ui/Paper';
 
-var style = {
+var styles = {
   reducedBottomMargin: {
     marginBottom: '10px'
   },
+  aboutMeCard: {
+    backgroundColor: '#fafafa',
+    color: '#455a64'
+  }
 };
 
 export default class AboutMe extends Component {
@@ -63,36 +67,10 @@ export default class AboutMe extends Component {
     }, 50);
   }
 
-  renderContacts() {
-    return (
-      <div className="hoverable">
-        <Paper zDepth={4}>
-          <br />
-          <div className="row center">
-            <i className="material-icons medium about-me-section-icon">phone</i>
-            <b>Contacts</b>
-          </div>
-          <div className="row" style={style.reducedBottomMargin}>
-            <div className="col m4 offset-m4 s8 offset-s2">
-              <i className="material-icons small contact-info-icon">email</i>
-              JeremyChen0127@gmail.com
-            </div>
-          </div>
-          <div className="row">
-            <div className="col m4 offset-m4 s8 offset-s2">
-              <i className="material-icons small contact-info-icon">phonelink_ring</i>
-              +1 (226) 978-5759
-            </div>
-          </div>
-        </Paper>
-      </div>
-    );
-  }
-
   renderWhoAmI() {
     return (
       <div className="hoverable center">
-        <Paper zDepth={4}>
+        <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">
             <i className="material-icons about-me-section-icon medium">person</i>
@@ -114,7 +92,7 @@ export default class AboutMe extends Component {
   renderBecameGeek() {
     return (
       <div className="hoverable center">
-        <Paper zDepth={4}>
+        <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">
             <i className="material-icons about-me-section-icon medium" style={{marginRight: '10px'}}>important_devices</i>
@@ -124,7 +102,7 @@ export default class AboutMe extends Component {
             <div className="col m8 offset-m2 s10 offset-s1">
               <p>
                 I had no idea what programming was before I started my university.
-                However, after I have been taught data structures, algorithms, and logic of programming,
+                However, after I was taught data structures, algorithms, and logic of programming,
                 I totally fell in love with them. I started my geek journey since then.
                 Now, anything that shows up related to tech will draw my full attention.
                 That is when I found myself becoming a geek.
@@ -139,7 +117,7 @@ export default class AboutMe extends Component {
   renderWhatIDo() {
     return (
       <div className="hoverable center">
-        <Paper zDepth={4}>
+        <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">
             <i className="material-icons about-me-section-icon medium" style={{marginRight: '10px'}}>toys</i>

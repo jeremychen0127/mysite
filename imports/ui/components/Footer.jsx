@@ -6,6 +6,9 @@ import RaisedButton from 'material-ui/RaisedButton';
 const styles = {
   inputField: {
     fontSize: '14px',
+  },
+  inputDiv: {
+    paddingRight: '30px',
   }
 };
 
@@ -23,11 +26,11 @@ export default class Footer extends Component {
         </div>
         <br />
         <div className="row">
-          <div className="col m4 offset-m2">
+          <div className="col m4 offset-m2" style={styles.inputDiv}>
             <label htmlFor="name" className="input-label">Your Name</label>
             <input id="name" type="text" placeholder="e.g. Larry Page" className="validate" style={styles.inputField}/>
           </div>
-          <div className="col m4">
+          <div className="col m4" style={styles.inputDiv}>
             <label htmlFor="email" className="input-label">Your Email</label>
             <input id="email" type="email" placeholder="e.g. LarryPage@gmail.com" className="validate" style={styles.inputField}/>
           </div>

@@ -23,10 +23,10 @@ export default class Navbar extends Component {
       backgroundColor: 'inherit'
     };
     let tabStyle = {
-      color: '#424242'
+      color: '#455a64'
     };
     let inkBarStyle = {
-      backgroundColor: '#616161'
+      backgroundColor: '#546e7a'
     };
 
     return (
