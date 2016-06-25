@@ -72,13 +72,14 @@ body {
 
 /* Sections styles start */
 .section-title {
-    background-color: #455a64;
+    background-color: #607d8b;
     color: #FFFFFF;
     text-align: center;
     padding-top: 2px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
+    border-radius: 13px;
 }
 
 .skill-set {
@@ -89,7 +90,7 @@ body {
 .skill-set h4 {
     margin-bottom: 8px;
     border-left: solid;
-    border-color: #455a64;
+    border-color: #607d8b;
     padding-left: 5px;
 }
 
@@ -108,7 +109,7 @@ body {
 
 .entry-title h4 {
     border-left: solid;
-    border-color: #455a64;
+    border-color: #607d8b;
     padding-left: 5px;
 }
 
