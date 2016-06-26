@@ -49,7 +49,7 @@ export default class Resume extends Component {
           </div>
 
           <div className="col m6 s12 skill-set">
-            <h5><b>Others</b></h5>
+            <h5><b>Others & Soft Skills</b></h5>
             <ul>
               <li>Experienced with Git</li>
               <li>Comfortable with Vim and IntelliJ</li>
@@ -251,13 +251,15 @@ export default class Resume extends Component {
   
   render() {
     return (
-      <div className="resume">
-        <br />
-        {this.renderSummaryOfQualifications()}
-        {this.renderWorkExperience()}
-        {this.renderProjects()}
-        {this.renderEducation()}
-        {this.renderActivities()}
+      <div className="row resume">
+        <div className="col offset-l1 l10">
+          <br />
+          {this.renderSummaryOfQualifications()}
+          {this.renderWorkExperience()}
+          {this.renderProjects()}
+          {this.renderEducation()}
+          {this.renderActivities()}
+        </div>
       </div>
     );
   }
