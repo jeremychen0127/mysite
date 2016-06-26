@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
 
 const style = {
-  borderRadius: '20px',
+  backgroundColor: '#eceff1',
   color: '#455a64',
+  borderRadius: '20px',
 };
 
 export default class UnderContruction extends Component {
