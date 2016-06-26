@@ -26,21 +26,21 @@ export default class Footer extends Component {
         </div>
         <br />
         <div className="row">
-          <div className="col m4 offset-m2" style={styles.inputDiv}>
+          <div className="col offset-m2 m4 offset-l3 l3" style={styles.inputDiv}>
             <label htmlFor="name" className="input-label">Your Name</label>
             <input id="name" type="text" placeholder="e.g. Larry Page" className="validate" style={styles.inputField}/>
           </div>
-          <div className="col m4" style={styles.inputDiv}>
+          <div className="col m4 l3" style={styles.inputDiv}>
             <label htmlFor="email" className="input-label">Your Email</label>
             <input id="email" type="email" placeholder="e.g. LarryPage@gmail.com" className="validate" style={styles.inputField}/>
           </div>
         </div>
         <div className="row" style={{marginBottom: '0px'}}>
-          <div className="col offset-m2 m6">
+          <div className="col offset-m2 m6 offset-l3 l4">
             <label htmlFor="message" className="input-label">Message</label>
             <textarea id="message" className="materialize-textarea" style={styles.inputField}/>
           </div>
-          <div className="col m2">
+          <div className="col m2 l2">
             <div className="center" style={{paddingTop: '40px'}}>
               <RaisedButton label="Send" />
             </div>
