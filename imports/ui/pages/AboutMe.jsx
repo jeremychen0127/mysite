@@ -180,10 +180,10 @@ export default class AboutMe extends Component {
       <div>
         <br />
         <div className="row">
-          <div className="col offset-l2 l4 offset-m2 m8 s12" style={styles.paperSpacingBottom}>
+          <div className={"col offset-m2 m8 s12 " + ($(window).innerWidth() >= 1500 ? "offset-l2 l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderWhoAmI()}
           </div>
-          <div className="col l4 offset-m2 m8 s12" style={styles.paperSpacingBottom}>
+          <div className={"col offset-m2 m8 s12 " + ($(window).innerWidth() >= 1500 ? "l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderBecameGeek()}
           </div>
           <div className="col offset-m2 m8 s12" style={styles.paperSpacingBottom}>
