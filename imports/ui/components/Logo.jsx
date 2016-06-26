@@ -5,7 +5,7 @@ export default class Logo extends Component {
     return (
       <div className="row center">
         <div className="col m8 offset-m2 s12">
-          <img src="/img/logo.png" height="100"/>
+          <img src="/img/logo.png" height="100" width="350"/>
         </div>
       </div>
     );
