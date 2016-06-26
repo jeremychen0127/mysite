@@ -22,16 +22,17 @@ export default class Resume extends Component {
           <div className="col m6 s12 skill-set">
             <h5><b>Languages</b></h5>
             <ul>
-              <li>Proficient: Java, C/C++, Javascript</li>
-              <li>Intermediate: HTML5, CSS, SQL, Python, Perl, Shell</li>
+              <li>Proficient: Python, C/C++, Java, Javascript</li>
+              <li>Intermediate: HTML5, CSS, SQL, Perl, Bash</li>
             </ul>
           </div>
 
           <div className="col m6 s12 skill-set">
-            <h5><b>OS and Tools</b></h5>
+            <h5><b>OS and Concepts</b></h5>
             <ul>
               <li>Familiar with Linux, OS X, and Windows</li>
-              <li>Experienced with Git, IntelliJ, and Vim</li>
+              <li>Working knowledge of networking concepts (TCP/IP, UDP, etc.)</li>
+              <li>Excellent understanding of OOP, design patterns, and agile methodology</li>
             </ul>
           </div>
         </div>
@@ -40,18 +41,20 @@ export default class Resume extends Component {
           <div className="col m6 s12 skill-set">
             <h5><b>Web Development</b></h5>
             <ul>
-              <li>Experience in Materialize, Material UI, and Bootstrap</li>
               <li>In-depth knowledge of React and JQuery</li>
               <li>Experienced with Meteor and Node.js</li>
               <li>Strong knowledge of MySQL, MongoDB</li>
+              <li>Experience in Materialize, Material UI, and Bootstrap</li>
             </ul>
           </div>
 
           <div className="col m6 s12 skill-set">
-            <h5><b>Software Engineering & Others</b></h5>
+            <h5><b>Others</b></h5>
             <ul>
-              <li>Familiar with TCP/IP concepts</li>
-              <li>Excellent understanding of OOP, design patterns, and agile methodology</li>
+              <li>Experienced with Git</li>
+              <li>Comfortable with Vim and IntelliJ</li>
+              <li>Developed leadership skills through coordinating events in the university club</li>
+              <li>Excellent group-working and communication skills developed through working with co-workers</li>
             </ul>
           </div>
         </div>
@@ -65,6 +68,36 @@ export default class Resume extends Component {
         <div className="row">
           <div className="section-title z-depth-2">
             <h5><b>Work Experience</b></h5>
+          </div>
+        </div>
+
+        <div className="section-entry">
+          <div className="row" style={style.reducedBottomMargin}>
+            <div className="col m6 s12 entry-title" style={style.entryTitleStyle}>
+              <h5><b>Software Engineer Co-op</b></h5>
+            </div>
+            <div className="col m6 s12">
+              <div className="right hide-on-small-only">
+                <h5>Aug. 2015 - Dec. 2015</h5>
+              </div>
+              <div className="hide-on-med-and-up">
+                <h5>Aug. 2015 - Dec. 2015</h5>
+              </div>
+            </div>
+          </div>
+
+          <div className="row company" style={style.reducedBottomMargin}>
+            <h5>Dematic Limited, Waterloo, ON</h5>
+          </div>
+
+          <div className="row description">
+            <ul>
+              <li>Designed and implemented a system which collapses the configuration files from more than
+                10,000 lines to approximately 4,000 lines and expands them back using Java</li>
+              <li>Implemented automated deployment of the existing products and the third-party software,
+                reducing the time to create and configure a testing server from hours to 30-35 minutes</li>
+              <li>Implemented a system which analyzes and visualizes metrics using Node.js and D3.js</li>
+            </ul>
           </div>
         </div>
 
@@ -89,38 +122,8 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Developed the service providing most of the functionality of the Test Manager Application digitizing ATM module testing process</li>
-              <li>Designed and developed both back-end and front-end of the web pages for manipulating testing related data</li>
-              <li>Created SQL stored procedures which process data entered in the web pages</li>
-              <li>Communicated with teammates to optimize work distribution</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="section-entry">
-          <div className="row" style={style.reducedBottomMargin}>
-            <div className="col m6 s12 entry-title" style={style.entryTitleStyle}>
-              <h5><b>Restaurant Waiter</b></h5>
-            </div>
-            <div className="col m6 s12">
-              <div className="right hide-on-small-only">
-                <h5>Mar. 2013 - Jul. 2013</h5>
-              </div>
-              <div className="hide-on-med-and-up">
-                <h5>Mar. 2013 - Jul. 2013</h5>
-              </div>
-            </div>
-          </div>
-
-          <div className="row company" style={style.reducedBottomMargin}>
-            <h5>Empire Garden Restaurant, Langley, BC</h5>
-          </div>
-
-          <div className="row description">
-            <ul>
-              <li>Multitasked with kitchen work and customers' needs</li>
-              <li>Achieved customers' satisfaction through excellent communication skills</li>
-              <li>Placed orders and served with speed and politeness</li>
+              <li>Designed and implemented the backend of an ATM testing framework using Perl</li>
+              <li>Co-designed and implemented a GUI for monitoring and visualizing testing data</li>
             </ul>
           </div>
         </div>
@@ -138,6 +141,16 @@ export default class Resume extends Component {
         </div>
 
         <div className="section-entry">
+          <div className="row entry-title" style={style.reducedBottomMargin}>
+            <h5><b>Tote (AngelHack) <a href="https://github.com/jeremychen0127/tote.git" target="_blank">@GitHub</a></b></h5>
+          </div>
+          <ul>
+            <li>Implemented mix-n-match for dress styles</li>
+            <li>Designed and implemented 95% of the UI components using React</li>
+          </ul>
+        </div>
+
+        <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="entry-title" style={style.entryTitleStyle}>
               <h5><b>Building Buyer 7000 (Monopoly)</b></h5>
@@ -150,15 +163,6 @@ export default class Resume extends Component {
               <li>Designed the implementation using UML and various design patterns including MVC, Decorator, and Factory Patterns</li>
             </ul>
           </div>
-        </div>
-
-        <div className="section-entry">
-          <div className="row entry-title" style={style.reducedBottomMargin}>
-            <h5><b>Personal Website <a href="https://github.com/jeremychen0127/mysite" target="_blank">@GitHub</a></b></h5>
-          </div>
-          <ul>
-            <li>Designed and implemented my personal website using HTML, CSS, and JavaScript(JQuery)</li>
-          </ul>
         </div>
       </div>
     );
@@ -194,8 +198,10 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>President's Scholarship of Distinction</li>
-              <li>Math Faculty Entrance Scholarship</li>
+              <li>Overall Average: 89.5</li>
+              <li>Major Average: 88.3</li>
+              <li>President's Scholarship of Distinction (95+)</li>
+              <li>Math Faculty Scholarship</li>
             </ul>
           </div>
         </div>
