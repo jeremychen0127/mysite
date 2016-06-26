@@ -5,67 +5,81 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Paper from 'material-ui/Paper';
 
+const ReactHighcharts = require('react-highcharts');
+
+const config = {
+  chart: {
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
+    plotBackgroundColor: 'transparent',
+    plotBorderColor: 'transparent',
+    plotBorderWidth: 'inherit',
+    plotShadow: false,
+    margin: [0, 30, 100, 30],
+    type: 'pie',
+  },
+  tooltip: {
+    pointFormat: '<b>{point.percentage:.1f}%</b>'
+  },
+  title:{
+    text:''
+  },
+  plotOptions: {
+    pie: {
+      allowPointSelect: true,
+      cursor: 'pointer',
+      dataLabels: {
+        enabled: false
+      },
+      startAngle: 15,
+      showInLegend: true
+    }
+  },
+  legend: {
+    itemMarginBottom: 10,
+  },
+  credits: {
+    enabled: false
+  },
+  series: [{
+    name: 'Time',
+    colorByPoint: true,
+    data: [{
+      name: 'Working / Coding',
+      y: 60.65,
+      sliced: true,
+      selected: true
+    }, {
+      name: 'Browsing Tech Articles / Quora',
+      y: 25
+    }, {
+      name: 'Watching Detective Dramas',
+      y: 6.45
+    }, {
+      name: 'Family & Friends',
+      y: 7.9
+    }]
+  }]
+};
+
 var styles = {
   reducedBottomMargin: {
     marginBottom: '10px'
   },
   aboutMeCard: {
-    backgroundColor: '#fafafa',
+    backgroundColor: '#eceff1',
     color: '#455a64',
     borderRadius: '20px',
   }
 };
 
 export default class AboutMe extends Component {
-
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
   }
 
-  componentDidUpdate(prevProps, prevState) {
-      this.renderChart();
-  }
-
   renderChart() {
-    setTimeout(function () {
-      var ctx = $("#myChart");
-      var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-              'rgba(255,99,132,1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
-        }
-      });
-    }, 50);
+    return <ReactHighcharts config={config}></ReactHighcharts>
   }
 
   renderWhoAmI() {
@@ -126,7 +140,14 @@ export default class AboutMe extends Component {
           </div>
           <div className="row">
             <div className="col m8 offset-m2 s10 offset-s1">
-              <canvas id="myChart" width="400" height="400"></canvas>
+              <p>
+                Yeah...of course this does not include sleeping, meals, blah blah blah...<br />
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="center" style={{width: 'inherit'}}>
+              {this.renderChart()}
             </div>
           </div>
         </Paper>
