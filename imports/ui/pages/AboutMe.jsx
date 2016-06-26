@@ -6,6 +6,35 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Paper from 'material-ui/Paper';
 
 const ReactHighcharts = require('react-highcharts');
+var Highcharts = require('highcharts');
+
+var styles = {
+  reducedBottomMargin: {
+    marginBottom: '10px'
+  },
+  paperSpacingBottom: {
+    marginBottom: '20px'
+  },
+  aboutMeCard: {
+    backgroundColor: '#eceff1',
+    color: '#455a64',
+    borderRadius: '20px',
+  }
+};
+
+Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+  return {
+    radialGradient: {
+      cx: 0.5,
+      cy: 0.3,
+      r: 0.7
+    },
+    stops: [
+      [0, color],
+      [1, Highcharts.Color(color).brighten(-0.5).get('rgb')] // darken
+    ]
+  };
+});
 
 const config = {
   chart: {
@@ -62,17 +91,6 @@ const config = {
   }]
 };
 
-var styles = {
-  reducedBottomMargin: {
-    marginBottom: '10px'
-  },
-  aboutMeCard: {
-    backgroundColor: '#eceff1',
-    color: '#455a64',
-    borderRadius: '20px',
-  }
-};
-
 export default class AboutMe extends Component {
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
@@ -96,6 +114,8 @@ export default class AboutMe extends Component {
               <p>
                 I am a geek who is fascinated by algorithms. Algorithmic thinking has become a huge part of my life.
                 Looking for a better algorithm to solve everyday problems can be fun to me.
+                You ask, what do I do other than tech stuff? I love any dramas about detectives.
+                Taking guesses who are the criminals is also extremely fun to me!
               </p>
             </div>
           </div>
@@ -106,7 +126,7 @@ export default class AboutMe extends Component {
 
   renderBecameGeek() {
     return (
-      <div className="hoverable center" style={{borderRadius: '20px'}}>
+      <div id="becameGeek" className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.aboutMeCard}>
           <br />
           <div className="row">
@@ -160,11 +180,13 @@ export default class AboutMe extends Component {
       <div>
         <br />
         <div className="row">
-          <div className="col offset-m2 m8 s12">
+          <div className="col offset-l2 l4 offset-m2 m8 s12" style={styles.paperSpacingBottom}>
             {this.renderWhoAmI()}
-            <br />
+          </div>
+          <div className="col l4 offset-m2 m8 s12" style={styles.paperSpacingBottom}>
             {this.renderBecameGeek()}
-            <br />
+          </div>
+          <div className="col offset-m2 m8 s12" style={styles.paperSpacingBottom}>
             {this.renderWhatIDo()}
           </div>
         </div>
