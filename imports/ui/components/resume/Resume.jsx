@@ -13,7 +13,7 @@ export default class Resume extends Component {
     return (
       <div>
         <div className="row">
-          <div className="section-title">
+          <div className="section-title z-depth-2">
             <h5><b>Summary of Qualifications</b></h5>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default class Resume extends Component {
     return (
       <div>
         <div className="row">
-          <div className="section-title">
+          <div className="section-title z-depth-2">
             <h5><b>Work Experience</b></h5>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default class Resume extends Component {
     return (
       <div>
         <div className="row">
-          <div className="section-title">
+          <div className="section-title z-depth-2">
             <h5><b>Projects</b></h5>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default class Resume extends Component {
     return (
       <div>
         <div className="row">
-          <div className="section-title">
+          <div className="section-title z-depth-2">
             <h5><b>Education</b></h5>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default class Resume extends Component {
     return (
       <div>
         <div className="row">
-          <div className="section-title">
+          <div className="section-title z-depth-2">
             <h5><b>Activities</b></h5>
           </div>
         </div>
