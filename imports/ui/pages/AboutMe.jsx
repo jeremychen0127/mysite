@@ -15,11 +15,21 @@ var styles = {
   paperSpacingBottom: {
     marginBottom: '20px'
   },
-  aboutMeCard: {
-    backgroundColor: '#eceff1',
+  whoAmICard: {
+    backgroundColor: '#e3f2fd',
     color: '#455a64',
     borderRadius: '20px',
-  }
+  },
+  becameGeekCard: {
+    backgroundColor: '#e8eaf6',
+    color: '#455a64',
+    borderRadius: '20px',
+  },
+  usuallyDoCard: {
+    backgroundColor: '#efebe9',
+    color: '#455a64',
+    borderRadius: '20px',
+  },
 };
 
 Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
@@ -103,7 +113,7 @@ export default class AboutMe extends Component {
   renderWhoAmI() {
     return (
       <div className="hoverable center" style={{borderRadius: '20px'}}>
-        <Paper zDepth={4} style={styles.aboutMeCard}>
+        <Paper zDepth={4} style={styles.whoAmICard}>
           <br />
           <div className="row">
             <i className="material-icons about-me-section-icon medium">person</i>
@@ -126,8 +136,8 @@ export default class AboutMe extends Component {
 
   renderBecameGeek() {
     return (
-      <div id="becameGeek" className="hoverable center" style={{borderRadius: '20px'}}>
-        <Paper zDepth={4} style={styles.aboutMeCard}>
+      <div className="hoverable center" style={{borderRadius: '20px'}}>
+        <Paper zDepth={4} style={styles.becameGeekCard}>
           <br />
           <div className="row">
             <i className="material-icons about-me-section-icon medium" style={{marginRight: '10px'}}>important_devices</i>
@@ -152,7 +162,7 @@ export default class AboutMe extends Component {
   renderWhatIDo() {
     return (
       <div className="hoverable center" style={{borderRadius: '20px'}}>
-        <Paper zDepth={4} style={styles.aboutMeCard}>
+        <Paper zDepth={4} style={styles.usuallyDoCard}>
           <br />
           <div className="row">
             <i className="material-icons about-me-section-icon medium" style={{marginRight: '10px'}}>toys</i>
@@ -179,7 +189,7 @@ export default class AboutMe extends Component {
     return (
       <div>
         <br />
-        <div className="row">
+        <div className="row fadeIn">
           <div className={"col offset-m2 m8 s12 " + ($(window).innerWidth() >= 1500 ? "offset-l2 l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderWhoAmI()}
           </div>
