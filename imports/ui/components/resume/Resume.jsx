@@ -251,7 +251,7 @@ export default class Resume extends Component {
   
   render() {
     return (
-      <div className="row resume">
+      <div className="row resume fadeIn">
         <div className="col offset-l1 l10">
           <br />
           {this.renderSummaryOfQualifications()}

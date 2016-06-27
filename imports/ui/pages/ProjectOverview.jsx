@@ -10,7 +10,7 @@ export default class ProjectOverview extends Component {
   }
   render() {
     return (
-      <div className="center">
+      <div className="center fadeIn">
         <br />
         <UnderConstruction />
       </div>
