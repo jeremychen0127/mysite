@@ -235,13 +235,9 @@ body {
     }
 }
 
-.flip-card-container-paper {
-    height: 150px;
-    width: 400px;
-}
-
 .flip-card-container {
     cursor: pointer;
+    text-align: center;
     position: relative;
     -webkit-perspective: 600px; /* Chrome, Safari, Opera */
     perspective: 600px;

@@ -16,23 +16,19 @@ export default class Experience extends Component {
       <div className="center fadeIn">
         <br />
           <div className="row">
-            <div className="col m6 s12">
-              <FlipCard
-                imgSrc="/img/ncr.png"
-                description="NCR Description" />
-            </div>
-            <div className="col m6 s12">
-              <FlipCard
-                imgSrc="/img/dematic.png"
-                description="Dematic Description" />
-            </div>
+            <FlipCard
+              imgSrc="/img/miovision.png"
+              description="Miovision Description" />
           </div>
           <div className="row">
-            <div className="col m6 s12">
-              <FlipCard
-                imgSrc="/img/miovision.png"
-                description="Miovision Description" />
-            </div>
+            <FlipCard
+              imgSrc="/img/dematic.png"
+              description="Dematic Description" />
+          </div>
+          <div className="row">
+            <FlipCard
+              imgSrc="/img/ncr.png"
+              description="NCR Description" />
           </div>
         <br />
       </div>
