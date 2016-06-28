@@ -245,8 +245,8 @@ body {
     position: relative;
     -webkit-perspective: 600px; /* Chrome, Safari, Opera */
     perspective: 600px;
-    height: 150px;
-    width: 350px;
+    height: 100px;
+    width: 300px;
 }
 
 .flip-card {
