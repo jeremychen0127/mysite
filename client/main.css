@@ -234,3 +234,45 @@ body {
         opacity: 1;
     }
 }
+
+.flip-card-container-paper {
+    height: 150px;
+    width: 400px;
+}
+
+.flip-card-container {
+    cursor: pointer;
+    position: relative;
+    -webkit-perspective: 600px; /* Chrome, Safari, Opera */
+    perspective: 600px;
+    height: 150px;
+    width: 350px;
+}
+
+.flip-card {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-card .side {
+    backface-visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.flip-card .back {
+    transform: rotateY(180deg);
+    line-height: 150px;
+    background-color: #90a4ae;
+    border-radius: 20px;
+}

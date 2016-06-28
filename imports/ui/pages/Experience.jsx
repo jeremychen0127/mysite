@@ -4,9 +4,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import UnderConstruction from '../components/placeholder/UnderContruction';
 
-import Paper from 'material-ui/Paper';
+import FlipCard from '../components/experience/FlipCard';
 
-export default class ProjectOverview extends Component {
+export default class Experience extends Component {
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
   }
@@ -15,14 +15,23 @@ export default class ProjectOverview extends Component {
     return (
       <div className="center fadeIn">
         <br />
-          <div className="flip-card-container">
-            <div className="flip-card">
-              <div className="side">
-                <img src="/img/ncr.jpg" width="400" height="150"/>
-              </div>
-              <div className="side back">
-                NCR Description
-              </div>
+          <div className="row">
+            <div className="col offset-m2 m4 s12">
+              <FlipCard
+                imgSrc="/img/ncr.png"
+                description="NCR Description" />
+            </div>
+            <div className="col m4 s12">
+              <FlipCard
+                imgSrc="/img/dematic.png"
+                description="Dematic Description" />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col offset-m2 m4 s12">
+              <FlipCard
+                imgSrc="/img/miovision.png"
+                description="Miovision Description" />
             </div>
           </div>
         <br />
@@ -31,6 +40,6 @@ export default class ProjectOverview extends Component {
   }
 }
 
-ProjectOverview.childContextTypes = {
+Experience.childContextTypes = {
   muiTheme: React.PropTypes.object.isRequired,
 };
