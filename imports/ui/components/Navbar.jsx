@@ -34,7 +34,7 @@ export default class Navbar extends Component {
         <div className="col m6 offset-m3 s12">
           <Tabs value={FlowRouter.getRouteName()} onChange={this.handleChange.bind(this)} tabItemContainerStyle={tabContainerStyle} inkBarStyle={inkBarStyle}>
             <Tab style={tabStyle} label="About Me" value="about" onActive={this.handleActive.bind(this)}/>
-            <Tab style={tabStyle} label="Projects" value="projects" onActive={this.handleActive.bind(this)}/>
+            <Tab style={tabStyle} label="Experience" value="experience" onActive={this.handleActive.bind(this)}/>
             <Tab style={tabStyle} label="Resume" value="resume" onActive={this.handleActive.bind(this)}/>
           </Tabs>
         </div>

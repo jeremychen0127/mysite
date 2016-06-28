@@ -4,7 +4,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 
 import { Layout } from '../../ui/layouts/Layout';
 import AboutMe from '../../ui/pages/AboutMe';
-import ProjectOverview from '../../ui/pages/ProjectOverview';
+import Experience from '../../ui/pages/Experience';
 import Resume from '../../ui/pages/Resume';
 
 FlowRouter.route('/', {
@@ -21,10 +21,10 @@ FlowRouter.route('/about', {
   }
 });
 
-FlowRouter.route('/project', {
-  name: 'projects',
+FlowRouter.route('/experience', {
+  name: 'experience',
   action() {
-    mount(Layout, {content: <ProjectOverview />});
+    mount(Layout, {content: <Experience />});
   }
 });
 
