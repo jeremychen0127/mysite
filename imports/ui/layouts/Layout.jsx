@@ -1,13 +1,11 @@
 import React from 'react';
-import Navbar from '../../ui/components/Navbar.jsx';
-import Logo from '../../ui/components/Logo.jsx';
-import Footer from '../../ui/components/Footer.jsx';
+import Footer from '../components/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
 
 export const Layout =  ({content}) => (
   <div className="app-root">
-    <br />
-    <Logo />
     <Navbar />
+    <br />
     <div className="container">
       {content}
     </div>

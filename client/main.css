@@ -2,6 +2,49 @@ body {
     background-color: #eceff1;
 }
 
+/* navbar styles */
+#logo {
+    font-family: 'Oleo Script', Helvetica, sans-serif;
+    color: #263238;
+    text-shadow: 4px 4px 0px rgba(188, 188, 188, 0.1);
+}
+
+li a#logo {
+    background-color: #eceff1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+li a#logo:hover {
+    background-color: #eceff1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #78909c;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #b0bec5;
+}
+
 /* header styles start*/
 .resume ul {
     padding-left: 20px;
