@@ -241,8 +241,7 @@ body {
     position: relative;
     -webkit-perspective: 600px; /* Chrome, Safari, Opera */
     perspective: 600px;
-    height: 100px;
-    width: 300px;
+    height: 120px;
 }
 
 .flip-card {
@@ -254,7 +253,7 @@ body {
 }
 
 .flip-card:hover {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 .flip-card .side {
@@ -267,7 +266,8 @@ body {
 }
 
 .flip-card .back {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+    text-align: center;
     line-height: 150px;
     background-color: #90a4ae;
     border-radius: 20px;

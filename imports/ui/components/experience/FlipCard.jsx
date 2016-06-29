@@ -6,7 +6,7 @@ export default class FlipCard extends Component {
       <div className="flip-card-container">
         <div className="flip-card">
           <div className="side">
-            <img src={this.props.imgSrc} width="200" height="100"/>
+            <img src={this.props.imgSrc} width="400" height="120"/>
           </div>
           <div className="side back">
             {this.props.description}
