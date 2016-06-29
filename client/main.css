@@ -4,7 +4,8 @@ body {
 
 /* navbar styles */
 #logo {
-    font-family: 'Oleo Script', Helvetica, sans-serif;
+    font-family: 'Damion', cursive;
+    font-size: 18px;
     color: #263238;
     text-shadow: 4px 4px 0px rgba(188, 188, 188, 0.1);
 }
@@ -39,6 +40,8 @@ li a#logo:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
 }
 
 .navbar li a:hover {
@@ -46,6 +49,10 @@ li a#logo:hover {
 }
 
 /* header styles start*/
+.resume {
+    font-family: 'Roboto', sans-serif;
+}
+
 .resume ul {
     padding-left: 20px;
 }
@@ -55,7 +62,6 @@ li a#logo:hover {
     color: #425761;
     display: list-item;
     list-style-type: circle;
-    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
 
 .resume-header {
@@ -95,18 +101,6 @@ li a#logo:hover {
 .info * {
     height: 20px;
     margin-bottom: 5px;
-}
-
-.odd-row {
-    background-color: #CECECE;
-}
-
-.glyphicon {
-    width: 30px;
-    font-size: 20px;
-    margin-right: 2px;
-    margin-left: 5px;
-    margin-top: 5px;
 }
 
 /* Sections styles start */
@@ -314,4 +308,16 @@ li a#logo:hover {
     line-height: 150px;
     background-color: #90a4ae;
     border-radius: 20px;
+}
+
+.title {
+    font-family: 'Damion', cursive;
+}
+
+.quote {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.about-me {
+    font-size: 16px;
 }
