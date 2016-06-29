@@ -180,6 +180,7 @@ li a#logo:hover {
 .contact-me {
     background-color: #78909c;
     color: #FFFFFF;
+    font-family: 'Patua One', cursive;
 }
 
 .contact-me .input-label {
