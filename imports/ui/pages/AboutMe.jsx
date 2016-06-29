@@ -19,16 +19,19 @@ var styles = {
     backgroundColor: '#e3f2fd',
     color: '#455a64',
     borderRadius: '20px',
+    fontFamily: 'Patua One, cursive',
   },
   becameGeekCard: {
     backgroundColor: '#e8eaf6',
     color: '#455a64',
     borderRadius: '20px',
+    fontFamily: 'Patua One, cursive',
   },
   usuallyDoCard: {
     backgroundColor: '#efebe9',
     color: '#455a64',
     borderRadius: '20px',
+    fontFamily: 'Patua One, cursive',
   },
 };
 
@@ -187,16 +190,20 @@ export default class AboutMe extends Component {
 
   render() {
     return (
-      <div>
+      <div className="about-me">
+        <div>
+          <h2 className="title center">Profile</h2>
+          <p className="quote center"><i>Algorithmic thinking is not a study but a lifestyle</i></p>
+        </div>
         <br />
         <div className="row fadeIn">
-          <div className={"col offset-m2 m8 s12 " + ($(window).innerWidth() >= 1500 ? "offset-l2 l4" : "")} style={styles.paperSpacingBottom}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1500 ? "offset-l2 l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderWhoAmI()}
           </div>
-          <div className={"col offset-m2 m8 s12 " + ($(window).innerWidth() >= 1500 ? "l4" : "")} style={styles.paperSpacingBottom}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1500 ? "l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderBecameGeek()}
           </div>
-          <div className="col offset-m2 m8 s12" style={styles.paperSpacingBottom}>
+          <div className="col offset-m1 m10 s12" style={styles.paperSpacingBottom}>
             {this.renderWhatIDo()}
           </div>
         </div>
