@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Logo from '../Logo.jsx';
+
 var style = {
   reducedBottomMargin: {
     marginBottom: '7px'
@@ -248,12 +250,13 @@ export default class Resume extends Component {
       </div>
     );
   }
-  
+
   render() {
     return (
       <div className="row resume fadeIn">
         <div className="col offset-l1 l10">
           <br />
+          <Logo />
           {this.renderSummaryOfQualifications()}
           {this.renderWorkExperience()}
           {this.renderProjects()}
