@@ -3,21 +3,21 @@ import { mount } from 'react-mounter';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 import { Layout } from '../../ui/layouts/Layout';
-import AboutMe from '../../ui/pages/AboutMe';
+import Profile from '../../ui/pages/Profile';
 import Experience from '../../ui/pages/Experience';
 import Resume from '../../ui/pages/Resume';
 
 FlowRouter.route('/', {
   name: 'index',
   triggersEnter: [function(context, redirect) {
-    redirect('/about');
+    redirect('/profile');
   }]
 });
 
-FlowRouter.route('/about', {
-  name: 'about',
+FlowRouter.route('/profile', {
+  name: 'profile',
   action() {
-    mount(Layout, {content: <AboutMe />});
+    mount(Layout, {content: <Profile />});
   }
 });
 

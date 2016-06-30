@@ -15,7 +15,7 @@ export default class TopNavbar extends Component {
       <div className="navbar">
         <ul>
           <li><a id="logo" href="/">Jeremy Chen</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="/profile">Profile</a></li>
           <li><a href="/experience">Experience</a></li>
           <li className="right"><a href="/resume">Resume</a></li>
         </ul>

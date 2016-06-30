@@ -104,7 +104,7 @@ const config = {
   }]
 };
 
-export default class AboutMe extends Component {
+export default class Profile extends Component {
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
   }
@@ -212,6 +212,6 @@ export default class AboutMe extends Component {
   }
 }
 
-AboutMe.childContextTypes = {
+Profile.childContextTypes = {
   muiTheme: React.PropTypes.object.isRequired,
 };
