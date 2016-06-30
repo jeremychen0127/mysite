@@ -190,13 +190,13 @@ export default class AboutMe extends Component {
 
   render() {
     return (
-      <div className="about-me">
+      <div className="about-me fadeIn">
         <div>
           <h2 className="title center">Profile</h2>
           <p className="quote center"><i>Algorithmic thinking is not a study but a lifestyle</i></p>
         </div>
         <br />
-        <div className="row fadeIn">
+        <div className="row">
           <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1500 ? "offset-l2 l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderWhoAmI()}
           </div>
