@@ -13,6 +13,31 @@ import MenuItem from 'material-ui/MenuItem';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
+const styles = {
+  leftNavMenuItem: {
+    fontFamily: 'Patua One, cursive',
+    color: '#455a64',
+  },
+
+  leftNavMenuItemIcon: {
+    color: '#546e7a',
+  },
+
+  leftNavMenuItemMobile: {
+    fontSize: '25px',
+    fontFamily: 'Patua One, cursive',
+    height: '70px',
+    paddingTop: '10px',
+    color: '#455a64',
+  },
+
+  leftNavMenuItemMobileIcon: {
+    fontSize: '30px',
+    marginTop: '8px',
+    color: '#546e7a',
+  }
+};
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -45,17 +70,33 @@ class Navbar extends Component {
 
   renderLeftNav() {
     return (
-      <Drawer open={this.state.leftNavOpen} docked={false}
-              onRequestChange={(open, reason) => { this.setState({leftNavOpen:open}) }}
-              width={200} style={{zIndex:9999}}>
-        <MenuItem linkButton={true} href="/profile" primaryText="Profile"
-                  leftIcon={<FontIcon className="material-icons">account_box</FontIcon>}/>
-        <MenuItem linkButton={true} href="/experience" primaryText="Experience"
-                  leftIcon={<FontIcon className="material-icons">build</FontIcon>}/>
-        <Divider />
-        <MenuItem linkButton={true} href="/resume" primaryText="Resume"
-                  leftIcon={<FontIcon className="material-icons">assignment</FontIcon>}/>
-      </Drawer>
+      <div >
+        <Drawer open={this.state.leftNavOpen} docked={false} className="hide-on-small-and-down"
+                onRequestChange={(open, reason) => { this.setState({leftNavOpen:open}) }}
+                width={200} style={{zIndex:9999}}>
+
+            <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/profile" primaryText="Profile"
+                      leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">account_box</FontIcon>}/>
+            <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/experience" primaryText="Experience"
+                      leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">build</FontIcon>}/>
+            <Divider />
+            <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/resume" primaryText="Resume"
+                      leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">assignment</FontIcon>}/>
+        </Drawer>
+
+        <Drawer open={this.state.leftNavOpen} docked={false} className="hide-on-med-and-up"
+                onRequestChange={(open, reason) => { this.setState({leftNavOpen:open}) }}
+                width={250} style={{zIndex:9999}}>
+          <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/profile" primaryText="Profile"
+                    leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">account_box</FontIcon>}/>
+          <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/experience" primaryText="Experience"
+                    leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">build</FontIcon>}/>
+          <Divider />
+          <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/resume" primaryText="Resume"
+                    leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">assignment</FontIcon>}/>
+
+        </Drawer>
+      </div>
     );
   }
 
@@ -76,7 +117,7 @@ class Navbar extends Component {
             </div>
 
             <div className="hide-on-small-and-down">
-              <li style={{marginTop: '3px', marginLeft: '10px'}}>
+              <li style={{marginTop: '5px', marginLeft: '10px'}}>
                 <i className="material-icons"
                    style={{color: 'white', cursor: 'pointer', fontSize: '30px', margin: '10px'}}
                    onClick={this.handleLeftNavToggle}>
