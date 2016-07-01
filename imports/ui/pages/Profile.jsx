@@ -197,13 +197,13 @@ export default class Profile extends Component {
         </div>
         <br />
         <div className="row">
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1500 ? "offset-l2 l4" : "")} style={styles.paperSpacingBottom}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "offset-l1 l5" : "")} style={styles.paperSpacingBottom}>
             {this.renderWhoAmI()}
           </div>
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1500 ? "l4" : "")} style={styles.paperSpacingBottom}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "l5" : "")} style={styles.paperSpacingBottom}>
             {this.renderBecameGeek()}
           </div>
-          <div className="col offset-m1 m10 s12 offset-l2 l8" style={styles.paperSpacingBottom}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "offset-l1 l10" : "")} style={styles.paperSpacingBottom}>
             {this.renderWhatIDo()}
           </div>
         </div>
