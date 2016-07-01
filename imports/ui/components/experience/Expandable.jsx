@@ -10,7 +10,14 @@ export default class Expandable extends Component {
       maxHeight: '500px',
     };
 
-    this.toggleExpand = () => this.setState({isExpand: !this.state.isExpand});
+    this.toggleExpand = () => {
+      this.setState({isExpand: !this.state.isExpand});
+
+      if (!this.state.isExpand) {
+        this.props.handleExpandingSectionChange(this.props.imgSrc);
+      }
+    };
+
     this.handleResize = (event) => {
       if (window.innerWidth >= 1350) {
         this.setState({maxHeight: '200px'});
@@ -20,7 +27,7 @@ export default class Expandable extends Component {
         this.setState({maxHeight: '500px'});
       }
       this.setState({windowWidth: window.innerWidth});
-    }
+    };
   }
 
   componentDidMount() {
@@ -29,6 +36,10 @@ export default class Expandable extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({isExpand: nextProps.isExpand});
   }
 
   render() {
@@ -49,5 +60,7 @@ export default class Expandable extends Component {
 
 Expandable.propTypes = {
   imgSrc: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired
+  description: React.PropTypes.string.isRequired,
+  handleExpandingSectionChange: React.PropTypes.func.isRequired,
+  isExpand: React.PropTypes.bool.isRequired,
 };

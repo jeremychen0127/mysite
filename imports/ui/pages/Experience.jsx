@@ -31,6 +31,14 @@ const ncrDescription =
 
 
 export default class Experience extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { expandingSection: '' };
+
+    this.handleExpandingSectionChange = (img) => this.setState({expandingSection: img});
+  }
+
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
   }
@@ -47,7 +55,9 @@ export default class Experience extends Component {
             <div className="center">
               <Expandable
                 imgSrc="/img/miovision.png"
-                description={miovisionDescription} />
+                description={miovisionDescription}
+                handleExpandingSectionChange={this.handleExpandingSectionChange}
+                isExpand={this.state.expandingSection === "/img/miovision.png"} />
             </div>
           </div>
           <Divider />
@@ -55,7 +65,9 @@ export default class Experience extends Component {
           <div className="row">
             <Expandable
               imgSrc="/img/dematic.png"
-              description={dematicDescription} />
+              description={dematicDescription}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={this.state.expandingSection === "/img/dematic.png"} />
           </div>
           <Divider />
           <br />
@@ -63,7 +75,9 @@ export default class Experience extends Component {
           <div className="row">
             <Expandable
               imgSrc="/img/ncr.png"
-              description={ncrDescription} />
+              description={ncrDescription}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={this.state.expandingSection === "/img/ncr.png"} />
           </div>
         <br />
       </div>
