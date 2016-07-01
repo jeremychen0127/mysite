@@ -76,14 +76,14 @@ class Navbar extends Component {
             </div>
 
             <div className="hide-on-small-and-down">
-              <li>
+              <li style={{marginTop: '3px', marginLeft: '10px'}}>
                 <i className="material-icons"
-                   style={{color: 'white', cursor: 'pointer', fontSize: '35px', margin: '20px'}}
+                   style={{color: 'white', cursor: 'pointer', fontSize: '30px', margin: '10px'}}
                    onClick={this.handleLeftNavToggle}>
                   menu
                 </i>
               </li>
-              <li style={{marginTop: '7px', float: 'right'}}><a id="logo" href="/" style={{fontSize: '20px'}}>Jeremy Chen</a></li>
+              <li style={{float: 'right'}}><a id="logo" href="/" style={{fontSize: '20px'}}>Jeremy Chen</a></li>
             </div>
           </div>
 
