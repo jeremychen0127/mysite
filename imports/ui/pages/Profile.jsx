@@ -203,7 +203,7 @@ export default class Profile extends Component {
           <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1500 ? "l4" : "")} style={styles.paperSpacingBottom}>
             {this.renderBecameGeek()}
           </div>
-          <div className="col offset-m1 m10 s12" style={styles.paperSpacingBottom}>
+          <div className="col offset-m1 m10 s12 offset-l2 l8" style={styles.paperSpacingBottom}>
             {this.renderWhatIDo()}
           </div>
         </div>
