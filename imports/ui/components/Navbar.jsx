@@ -64,18 +64,31 @@ class Navbar extends Component {
       <div className="navbar">
         <ul>
           <div className="hide-on-large-only">
-            <li>
-              <IconButton iconStyle={{marginTop: '5px'}} onTouchTap={this.handleLeftNavToggle}>
-                <FontIcon color="white" className="material-icons">menu</FontIcon>
-              </IconButton>
-            </li>
-          </div>
+            <div className="hide-on-med-and-up">
+              <li>
+                <i className="material-icons"
+                   style={{color: 'white', cursor: 'pointer', fontSize: '45px', margin: '20px'}}
+                   onClick={this.handleLeftNavToggle}>
+                  menu
+                </i>
+              </li>
+              <li style={{marginTop: '10px', float: 'right'}}><a id="logo" href="/" style={{fontSize: '25px'}}>Jeremy Chen</a></li>
+            </div>
 
-          <div>
-            <li><a id="logo" href="/">Jeremy Chen</a></li>
+            <div className="hide-on-small-and-down">
+              <li>
+                <i className="material-icons"
+                   style={{color: 'white', cursor: 'pointer', fontSize: '35px', margin: '20px'}}
+                   onClick={this.handleLeftNavToggle}>
+                  menu
+                </i>
+              </li>
+              <li style={{marginTop: '7px', float: 'right'}}><a id="logo" href="/" style={{fontSize: '20px'}}>Jeremy Chen</a></li>
+            </div>
           </div>
 
           <div className="hide-on-med-and-down">
+            <li><a id="logo" href="/">Jeremy Chen</a></li>
             <li className={this.isActive('profile')}><a href="/profile">Profile</a></li>
             <li className={this.isActive('experience')}><a href="/experience">Experience</a></li>
             <li className={"right " + this.isActive('resume')}><a href="/resume">Resume</a></li>
