@@ -21,7 +21,10 @@ class Navbar extends Component {
       leftNavOpen: false,
     };
 
-    this.handleLeftNavToggle = () =>this.setState({leftNavOpen: !this.state.leftNavOpen});
+    this.handleLeftNavToggle = (event) => {
+      event.preventDefault();
+      this.setState({leftNavOpen: !this.state.leftNavOpen});
+    }
   }
 
   getChildContext() {
