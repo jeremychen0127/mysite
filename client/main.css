@@ -300,7 +300,3 @@ li a#logo:hover {
     transition: max-height 0.5s;
     font-family: 'Patua One', cursive
 }
-
-.experienceExpandable:hover .expDescription, .experienceExpandable:active .expDescription{
-    max-height: 300px;
-}
