@@ -31,6 +31,14 @@ class Navbar extends Component {
     return {muiTheme: getMuiTheme(baseTheme)};
   }
 
+  isActive(routeName) {
+    if (this.props.currentRoute === routeName) {
+      return 'active';
+    }
+
+    return ''
+  }
+
   componentWillReceiveProps(nextProps) {
     this.setState({leftNavOpen: false});
   }
@@ -68,9 +76,9 @@ class Navbar extends Component {
           </div>
 
           <div className="hide-on-med-and-down">
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/experience">Experience</a></li>
-            <li className="right"><a href="/resume">Resume</a></li>
+            <li className={this.isActive('profile')}><a href="/profile">Profile</a></li>
+            <li className={this.isActive('experience')}><a href="/experience">Experience</a></li>
+            <li className={"right " + this.isActive('resume')}><a href="/resume">Resume</a></li>
           </div>
         </ul>
         {this.renderLeftNav()}
