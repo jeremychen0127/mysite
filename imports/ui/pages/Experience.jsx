@@ -66,6 +66,7 @@ export default class Experience extends Component {
             <Expandable
               imgSrc="/img/dematic.png"
               description={dematicDescription}
+              marginBelowPic={20}
               handleExpandingSectionChange={this.handleExpandingSectionChange}
               isExpand={this.state.expandingSection === "/img/dematic.png"} />
           </div>
@@ -76,6 +77,7 @@ export default class Experience extends Component {
             <Expandable
               imgSrc="/img/ncr.png"
               description={ncrDescription}
+              marginBelowPic={20}
               handleExpandingSectionChange={this.handleExpandingSectionChange}
               isExpand={this.state.expandingSection === "/img/ncr.png"} />
           </div>
