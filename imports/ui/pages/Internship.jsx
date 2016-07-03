@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-import UnderConstruction from '../components/placeholder/UnderContruction';
-
 import Expandable from '../components/experience/Expandable';
 
 import Divider from 'material-ui/Divider';
@@ -30,7 +28,7 @@ const ncrDescription =
   "it taught me how to do research and learn myself. Yes, from there, MY GEEK JOURNEY STARTED!";
 
 
-export default class Experience extends Component {
+export default class Internship extends Component {
   constructor(props) {
     super(props);
 
@@ -47,7 +45,7 @@ export default class Experience extends Component {
     return (
       <div className="experience center fadeIn">
         <div>
-          <h2 className="title center">Experience</h2>
+          <h2 className="title center">Internship</h2>
           <p className="quote center"><i>"Practice does not make perfect, perfect practice makes perfect" - Vince Lombardi</i></p>
         </div>
         <br />
@@ -87,6 +85,6 @@ export default class Experience extends Component {
   }
 }
 
-Experience.childContextTypes = {
+Internship.childContextTypes = {
   muiTheme: React.PropTypes.object.isRequired,
 };
