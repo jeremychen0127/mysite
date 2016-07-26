@@ -5,12 +5,17 @@ export default class Expandable extends Component {
     super(props);
 
     this.state = {
-      isExpand: false,
+      isExpand: props.isExpand,
       windowWidth: window.innerWidth,
       maxHeight: '500px',
     };
 
     this.toggleExpand = () => {
+      // disable expandable for large screens
+      if (this.state.windowWidth > 992) {
+        return false;
+      }
+
       this.setState({isExpand: !this.state.isExpand});
 
       if (!this.state.isExpand) {
@@ -44,10 +49,11 @@ export default class Expandable extends Component {
 
   render() {
     return (
-        <div className="experienceExpandable">
+      <div className="hoverable" style={{borderRadius: '20px'}}>
+        <div className="z-depth-2 experienceExpandable">
           <div style={{cursor: 'pointer'}} onClick={this.toggleExpand}>
             <img src={this.props.imgSrc} width="400" height="120" />
-            <div className="center" style={{marginTop: this.props.marginBelowPic + 'px'}}>
+            <div className="center hide-on-large-only" style={{marginTop: this.props.marginBelowPic + 'px'}}>
               <a style={{color: '#455a64', fontFamily: 'Patua One, cursive'}}>{this.state.isExpand ? 'Hide' : 'Show'} Details</a>
             </div>
           </div>
@@ -59,6 +65,7 @@ export default class Expandable extends Component {
             </div>
           </div>
         </div>
+      </div>
     );
   }
 }
