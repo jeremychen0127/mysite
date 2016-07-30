@@ -89,7 +89,7 @@ export default class Resume extends Component {
           </div>
 
           <div className="row company" style={style.reducedBottomMargin}>
-            <h5>Miovision, Waterloo, ON</h5>
+            <h5>Miovision Technologies Inc., Waterloo, ON</h5>
           </div>
 
           <div className="row description">
@@ -184,11 +184,11 @@ export default class Resume extends Component {
 
         <div className="section-entry">
           <div className="row entry-title" style={style.reducedBottomMargin}>
-            <h5><b>Tic-Tac-Toe with Unbeatable Player (ongoing) <a href="https://github.com/jeremychen0127/Tic_Tac_Toe" target="_blank">@GitHub</a></b></h5>
+            <h5><b>Tic-Tac-Toe with Unbeatable Player <a href="https://github.com/jeremychen0127/Tic_Tac_Toe" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Implement tic-tac-toe game using MVC architecture in C++</li>
-            <li>Implement an unbeatable AI player</li>
+            <li>Implemented tic-tac-toe game using MVC architecture in C++</li>
+            <li>Implemented an unbeatable AI player using minimax algorithm</li>
           </ul>
         </div>
 
