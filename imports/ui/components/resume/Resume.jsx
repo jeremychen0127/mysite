@@ -211,8 +211,8 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Implemented the classNameic game, Monopoly, using C++</li>
-              <li>Designed the implementation using UML and various design patterns including MVC, Decorator, and Factory Patterns</li>
+              <li>Implemented the classic game, Monopoly, using C++</li>
+              <li>Implemented various design patterns including MVC, Decorator, and Factory Patterns</li>
             </ul>
           </div>
         </div>
