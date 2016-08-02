@@ -187,7 +187,7 @@ export default class Resume extends Component {
             <h5><b>Tic-Tac-Toe with Unbeatable Player <a href="https://github.com/jeremychen0127/Tic_Tac_Toe" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Implemented tic-tac-toe game using MVC architecture in C++</li>
+            <li>Implemented a tic-tac-toe game using MVC architecture in C++</li>
             <li>Implemented an unbeatable AI player using minimax algorithm</li>
           </ul>
         </div>
@@ -211,7 +211,7 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Implemented the classic game, Monopoly, using C++</li>
+              <li>Implemented the classic Monopoly game using C++</li>
               <li>Implemented various design patterns including MVC, Decorator, and Factory Patterns</li>
             </ul>
           </div>
