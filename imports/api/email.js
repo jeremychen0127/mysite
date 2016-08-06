@@ -1,19 +1,13 @@
 import { Meteor } from 'meteor/meteor';
-import { Mongo } from 'meteor/mongo';
-
-export const MessageCollection = new Mongo.Collection("temp.message");
 
 if (Meteor.isServer) {
-  Meteor.publish("temp.message", function () {
-    return MessageCollection.find({});
-  });
-  
   Meteor.methods({
-    "temp.message.addMessage": function (name, email, message) {
-      MessageCollection.insert({
-        name: name,
-        email: email,
-        message: message
+    "contact.sendEmail": function (name, email, message) {
+      Email.send({
+        to: "jeremychen0127@gmail.com",
+        from: "contact@jeremy-chen.com",
+        subject: name + " Sent You a Message From Website",
+        html: "<p>" + message + "</p><br /><br />" + name + "'s Email: " + email
       });
     }
   });
