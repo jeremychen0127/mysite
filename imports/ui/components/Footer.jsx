@@ -29,7 +29,7 @@ export default class Footer extends Component {
     this.handleSubmit = (event) => {
       event.preventDefault();
 
-      Meteor.call("temp.message.addMessage", this.state.name, this.state.email, this.state.message);
+      Meteor.call("contact.sendEmail", this.state.name, this.state.email, this.state.message);
 
       this.setState({name: '', email: '', message: ''});
     }
