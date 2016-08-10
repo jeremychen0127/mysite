@@ -46,6 +46,22 @@ export default class Footer extends Component {
         <div className="center">
           <h3>Contact Me</h3>
         </div>
+        <div className="row" style={{marginBottom: 0}}>
+          <div className="col offset-s5 s1 offset-l5 l1">
+            <div className="right">
+              <a href="https://github.com/jeremychen0127" target="_blank">
+                <img src="/img/github.png" width={40} height={40} />
+              </a>
+            </div>
+          </div>
+          <div className="col s1" style={{marginTop: '-5px'}}>
+            <div className="left">
+              <a href="https://ca.linkedin.com/in/jeremychen2" target="_blank">
+                <img src="/img/linkedin.png" width={50} height={50} />
+              </a>
+            </div>
+          </div>
+        </div>
         <br />
         <div className="row">
           <div className="col offset-s1 s10 offset-m2 m4 offset-l3 l3" style={styles.inputDiv}>
