@@ -1,5 +1,3 @@
-import { Meteor } from 'meteor/meteor';
+import '../imports/startup/server/mail_url.js';
 
-Meteor.startup(() => {
-  // code to run on server at startup
-});
+import '../imports/api/email';

@@ -76,6 +76,36 @@ export default class Resume extends Component {
         <div className="section-entry">
           <div className="row" style={style.reducedBottomMargin}>
             <div className="col m6 s12 entry-title" style={style.entryTitleStyle}>
+              <h5><b>Full Stack Developer</b></h5>
+            </div>
+            <div className="col m6 s12">
+              <div className="right hide-on-small-only">
+                <h5>April. 2016 - Present</h5>
+              </div>
+              <div className="hide-on-med-and-up">
+                <h5>April. 2016 - Present</h5>
+              </div>
+            </div>
+          </div>
+
+          <div className="row company" style={style.reducedBottomMargin}>
+            <h5>Miovision Technologies Inc., Waterloo, ON</h5>
+          </div>
+
+          <div className="row description">
+            <ul>
+              <li>Design and implement a real-time organizational management system with Facebook-like and LinkedIn-like
+                features using Javascript, React, and MongoDB</li>
+              <li>Implement visualizations of OKRs and organizational structures with D3.js</li>
+              <li>Improve system performance by reducing loading time by 90%</li>
+              <li>Participate in at least 40% of software architectural and database design</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section-entry">
+          <div className="row" style={style.reducedBottomMargin}>
+            <div className="col m6 s12 entry-title" style={style.entryTitleStyle}>
               <h5><b>Software Engineer Co-op</b></h5>
             </div>
             <div className="col m6 s12">
@@ -144,10 +174,30 @@ export default class Resume extends Component {
 
         <div className="section-entry">
           <div className="row entry-title" style={style.reducedBottomMargin}>
+            <h5><b>Simple4Chat (ongoing) <a href="https://github.com/jeremychen0127/Simple4Chat" target="_blank">@GitHub</a></b></h5>
+          </div>
+          <ul>
+            <li>Design and implement a chat-room-oriented messaging app</li>
+            <li>Design and implement a tagging feature for chat rooms</li>
+          </ul>
+        </div>
+
+        <div className="section-entry">
+          <div className="row entry-title" style={style.reducedBottomMargin}>
+            <h5><b>Tic-Tac-Toe with Unbeatable Player <a href="https://github.com/jeremychen0127/Tic_Tac_Toe" target="_blank">@GitHub</a></b></h5>
+          </div>
+          <ul>
+            <li>Implemented a tic-tac-toe game using MVC architecture in C++</li>
+            <li>Implemented an unbeatable AI player using minimax algorithm</li>
+          </ul>
+        </div>
+
+        <div className="section-entry">
+          <div className="row entry-title" style={style.reducedBottomMargin}>
             <h5><b>Tote (AngelHack) <a href="https://github.com/jeremychen0127/tote.git" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Implemented mix-n-match for dress styles</li>
+            <li>Implemented mix-n-match for dressing</li>
             <li>Designed and implemented 95% of the UI components using React</li>
           </ul>
         </div>
@@ -161,8 +211,8 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Implemented the classNameic game, Monopoly, using C++</li>
-              <li>Designed the implementation using UML and various design patterns including MVC, Decorator, and Factory Patterns</li>
+              <li>Implemented the classic Monopoly game using C++</li>
+              <li>Implemented various design patterns including MVC, Decorator, and Factory Patterns</li>
             </ul>
           </div>
         </div>
@@ -200,8 +250,7 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Overall Average: 89.5</li>
-              <li>Major Average: 88.3</li>
+              <li>GPA (US Scale): 4.0</li>
               <li>President's Scholarship of Distinction (95+)</li>
               <li>Math Faculty Scholarship</li>
             </ul>

@@ -293,6 +293,11 @@ li a#logo:hover {
     font-size: 16px;
 }
 
+.experienceExpandable {
+    border-radius: 20px;
+    padding: 20px;
+}
+
 .expDescription {
     /* Initially we don't want any height, and we want the contents to be hidden */
     max-height: 0;

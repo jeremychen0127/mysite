@@ -50,34 +50,58 @@ export default class Internship extends Component {
         </div>
         <br />
           <div className="row">
-            <div className="center">
+            <div className="center hide-on-large-only">
               <Expandable
                 imgSrc="/img/miovision.png"
                 description={miovisionDescription}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}
                 isExpand={this.state.expandingSection === "/img/miovision.png"} />
             </div>
+            <div className="center hide-on-med-and-down">
+              <Expandable
+                imgSrc="/img/miovision.png"
+                description={miovisionDescription}
+                handleExpandingSectionChange={this.handleExpandingSectionChange}
+                isExpand={true} />
+            </div>
           </div>
-          <Divider />
           <br />
           <div className="row">
-            <Expandable
-              imgSrc="/img/dematic.png"
-              description={dematicDescription}
-              marginBelowPic={20}
-              handleExpandingSectionChange={this.handleExpandingSectionChange}
-              isExpand={this.state.expandingSection === "/img/dematic.png"} />
+            <div className="center hide-on-large-only">
+              <Expandable
+                imgSrc="/img/dematic.png"
+                description={dematicDescription}
+                marginBelowPic={20}
+                handleExpandingSectionChange={this.handleExpandingSectionChange}
+                isExpand={this.state.expandingSection === "/img/dematic.png"} />
+            </div>
+            <div className="center hide-on-med-and-down">
+              <Expandable
+                imgSrc="/img/dematic.png"
+                description={dematicDescription}
+                marginBelowPic={20}
+                handleExpandingSectionChange={this.handleExpandingSectionChange}
+                isExpand={true} />
+            </div>
           </div>
-          <Divider />
-          <br />
           <br />
           <div className="row">
-            <Expandable
-              imgSrc="/img/ncr.png"
-              description={ncrDescription}
-              marginBelowPic={20}
-              handleExpandingSectionChange={this.handleExpandingSectionChange}
-              isExpand={this.state.expandingSection === "/img/ncr.png"} />
+            <div className="center hide-on-large-only">
+              <Expandable
+                imgSrc="/img/ncr.png"
+                description={ncrDescription}
+                marginBelowPic={20}
+                handleExpandingSectionChange={this.handleExpandingSectionChange}
+                isExpand={this.state.expandingSection === "/img/ncr.png"} />
+            </div>
+            <div className="center hide-on-med-and-down">
+              <Expandable
+                imgSrc="/img/ncr.png"
+                description={ncrDescription}
+                marginBelowPic={20}
+                handleExpandingSectionChange={this.handleExpandingSectionChange}
+                isExpand={true} />
+            </div>
           </div>
         <br />
       </div>
