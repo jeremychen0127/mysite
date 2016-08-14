@@ -52,7 +52,10 @@ export default class Expandable extends Component {
       <div className="hoverable" style={{borderRadius: '20px'}}>
         <div className="z-depth-2 experienceExpandable">
           <div style={{cursor: 'pointer'}} onClick={this.toggleExpand}>
-            <img src={this.props.imgSrc} width="400" height="120" />
+            <img src={this.props.imgSrc}
+                 width={400}
+                 height={140}
+                 style={{borderRadius: '10px'}}/>
             <div className="center hide-on-large-only" style={{marginTop: this.props.marginBelowPic + 'px'}}>
               <a style={{color: '#455a64', fontFamily: 'Patua One, cursive'}}>{this.state.isExpand ? 'Hide' : 'Show'} Details</a>
             </div>

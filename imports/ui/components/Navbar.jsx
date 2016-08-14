@@ -77,8 +77,10 @@ class Navbar extends Component {
 
             <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/profile" primaryText="Profile"
                       leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">account_box</FontIcon>}/>
-            <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/internship" primaryText="Internship"
+            <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/projects" primaryText="Projects"
                       leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">build</FontIcon>}/>
+            <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/internship" primaryText="Internship"
+                      leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">work</FontIcon>}/>
             <Divider />
             <MenuItem style={styles.leftNavMenuItem} linkButton={true} href="/resume" primaryText="Resume"
                       leftIcon={<FontIcon style={styles.leftNavMenuItemIcon} className="material-icons">assignment</FontIcon>}/>
@@ -89,8 +91,10 @@ class Navbar extends Component {
                 width={250} style={{zIndex:9999}}>
           <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/profile" primaryText="Profile"
                     leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">account_box</FontIcon>}/>
-          <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/internship" primaryText="Internship"
+          <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/projects" primaryText="Projects"
                     leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">build</FontIcon>}/>
+          <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/internship" primaryText="Internship"
+                    leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">work</FontIcon>}/>
           <Divider />
           <MenuItem style={styles.leftNavMenuItemMobile} linkButton={true} href="/resume" primaryText="Resume"
                     leftIcon={<FontIcon style={styles.leftNavMenuItemMobileIcon} className="material-icons">assignment</FontIcon>}/>
@@ -131,8 +135,9 @@ class Navbar extends Component {
           <div className="hide-on-med-and-down">
             <li><a id="logo" href="/">Jeremy Chen</a></li>
             <li className={this.isActive('profile')}><a href="/profile">Profile</a></li>
-            <li className={this.isActive('internship')}><a href="/internship">Experience</a></li>
-            <li className={"right " + this.isActive('resume')}><a href="/resume">Resume</a></li>
+            <li className={this.isActive('projects')}><a href="/projects">Projects</a></li>
+            <li className={this.isActive('internship')}><a href="/internship">Internship</a></li>
+            <li className={this.isActive('resume')}><a href="/resume">Resume</a></li>
           </div>
         </ul>
         {this.renderLeftNav()}
