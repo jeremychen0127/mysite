@@ -12,11 +12,20 @@ var styles = {
   reducedBottomMargin: {
     marginBottom: '10px'
   },
+  noBottomMargin: {
+    marginBottom: '0px'
+  },
   paperSpacingBottom: {
     marginBottom: '20px'
   },
   whoAmICard: {
     backgroundColor: '#e3f2fd',
+    color: '#455a64',
+    borderRadius: '20px',
+    fontFamily: 'Patua One, cursive',
+  },
+  interestCard: {
+    backgroundColor: '#f1f0e6',
     color: '#455a64',
     borderRadius: '20px',
     fontFamily: 'Patua One, cursive',
@@ -118,8 +127,8 @@ export default class Profile extends Component {
       <div className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.whoAmICard}>
           <br />
-          <div className="row">
-            <i className="material-icons about-me-section-icon medium">person</i>
+          <div className="row" style={styles.noBottomMargin}>
+            <i className="material-icons about-me-section-icon" style={{fontSize: '3rem'}}>person</i>
             <b>Who Am I?</b>
           </div>
           <div className="row">
@@ -130,6 +139,7 @@ export default class Profile extends Component {
                 You ask, what do I do other than tech stuff? I love any dramas about detectives.
                 Taking guesses who are the criminals is also extremely fun to me!
               </p>
+              <br />
             </div>
           </div>
         </Paper>
@@ -142,8 +152,8 @@ export default class Profile extends Component {
       <div className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.becameGeekCard}>
           <br />
-          <div className="row">
-            <i className="material-icons about-me-section-icon medium" style={{marginRight: '10px'}}>important_devices</i>
+          <div className="row" style={styles.noBottomMargin}>
+            <i className="material-icons about-me-section-icon" style={{marginRight: '10px', fontSize: '3rem'}}>important_devices</i>
             <b>How I Became a Geek</b>
           </div>
           <div className="row">
@@ -155,6 +165,31 @@ export default class Profile extends Component {
                 Now, anything that shows up related to tech will draw my full attention.
                 That is when I found myself becoming a geek.
               </p>
+              <br />
+            </div>
+          </div>
+        </Paper>
+      </div>
+    );
+  }
+
+  renderInterests() {
+    return (
+      <div className="hoverable center" style={{borderRadius: '20px'}}>
+        <Paper zDepth={4} style={styles.interestCard}>
+          <br />
+          <div className="row" style={styles.noBottomMargin}>
+            <i className="material-icons about-me-section-icon" style={{marginRight: '10px', fontSize: '3rem'}}>favorite</i>
+            <b>Interests</b>
+          </div>
+          <div className="row">
+            <div className="col m8 offset-m2 s10 offset-s1">
+              <ul>
+                <li>Software Architecture and Design</li>
+                <li>Backend Development</li>
+                <li>Artificial Intelligence</li>
+              </ul>
+              <br />
             </div>
           </div>
         </Paper>
@@ -167,8 +202,8 @@ export default class Profile extends Component {
       <div className="hoverable center" style={{borderRadius: '20px'}}>
         <Paper zDepth={4} style={styles.usuallyDoCard}>
           <br />
-          <div className="row">
-            <i className="material-icons about-me-section-icon medium" style={{marginRight: '10px'}}>toys</i>
+          <div className="row" style={styles.noBottomMargin}>
+            <i className="material-icons about-me-section-icon" style={{marginRight: '10px', fontSize: '3rem'}}>toys</i>
             <b>What I Usually Do</b>
           </div>
           <div className="row">
@@ -196,14 +231,13 @@ export default class Profile extends Component {
           <p className="quote center"><i>Algorithmic thinking is not a study but a lifestyle</i></p>
         </div>
         <br />
-        <div className="row">
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "offset-l1 l5" : "")} style={styles.paperSpacingBottom}>
+        <div className="row" style={styles.noBottomMargin}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")} style={styles.noBottomMargin}>
             {this.renderWhoAmI()}
-          </div>
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "l5" : "")} style={styles.paperSpacingBottom}>
             {this.renderBecameGeek()}
           </div>
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "offset-l1 l10" : "")} style={styles.paperSpacingBottom}>
+          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")} style={styles.paperSpacingBottom}>
+            {this.renderInterests()}
             {this.renderWhatIDo()}
           </div>
         </div>
