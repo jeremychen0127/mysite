@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Expandable extends Component {
+export default class ItemExternalDetails extends Component {
   constructor(props) {
     super(props);
 
@@ -48,14 +48,14 @@ export default class Expandable extends Component {
   }
 }
 
-Expandable.propTypes = {
+ItemExternalDetails.propTypes = {
   imgSrc: React.PropTypes.string.isRequired,
   imgHeight: React.PropTypes.number.isRequired,
   imgWidth: React.PropTypes.number.isRequired,
   marginBelowPic: React.PropTypes.number.isRequired,
 };
 
-Expandable.defaultProps = {
+ItemExternalDetails.defaultProps = {
   marginBelowPic: 0,
   imgHeight: 160,
   imgWidth: 400
