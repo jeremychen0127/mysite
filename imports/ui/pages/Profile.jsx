@@ -16,7 +16,7 @@ var styles = {
     marginBottom: '0px'
   },
   paperSpacingBottom: {
-    marginBottom: '20px'
+    marginBottom: '30px'
   },
   whoAmICard: {
     backgroundColor: '#e3f2fd',
@@ -232,15 +232,24 @@ export default class Profile extends Component {
         </div>
         <br />
         <div className="row" style={styles.noBottomMargin}>
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")} style={styles.noBottomMargin}>
-            {this.renderWhoAmI()}
-            {this.renderBecameGeek()}
+          <div className={"col s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")}>
+            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+              {this.renderWhoAmI()}
+            </div>
+            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+              {this.renderBecameGeek()}
+            </div>
           </div>
-          <div className={"col offset-m1 m10 s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")} style={styles.paperSpacingBottom}>
-            {this.renderInterests()}
-            {this.renderWhatIDo()}
+          <div className={"col s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")}>
+            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+              {this.renderInterests()}
+            </div>
+            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+              {this.renderWhatIDo()}
+            </div>
           </div>
         </div>
+        <br />
       </div>
     );
   }
