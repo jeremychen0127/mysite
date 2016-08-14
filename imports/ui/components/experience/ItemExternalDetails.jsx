@@ -12,10 +12,10 @@ export default class ItemExternalDetails extends Component {
                  height={this.props.imgHeight}
                  style={{borderRadius: '10px'}}/>
             <div className="center" style={{marginTop: this.props.marginBelowPic + 'px'}}>
-              <div style={{color: '#455a64', fontFamily: 'Patua One, cursive', fontSize: '20px'}}>
-                {this.props.title}
-                <br />
-                View Details @ Github</div>
+              <div style={{color: '#455a64', fontFamily: 'Patua One, cursive'}}>
+                <div style={{fontSize: '25px'}}>{this.props.title}</div>
+                <div style={{fontSize: '20px', textDecoration: 'underline'}}>View Details @ Github</div>
+              </div>
             </div>
           </a>
         </div>

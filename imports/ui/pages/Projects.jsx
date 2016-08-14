@@ -32,7 +32,7 @@ export default class Projects extends Component {
             <ItemExternalDetails
               imgSrc="/img/tic-tac-toe.png"
               marginBelowPic={20}
-              title="Tic-Tac-Toe Game with Unbeatable AI Player"
+              title="Tic-Tac-Toe with Unbeatable AI Player"
               link="https://github.com/jeremychen0127/Tic_Tac_Toe"/>
           </div>
         </div>
