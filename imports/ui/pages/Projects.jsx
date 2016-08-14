@@ -28,7 +28,7 @@ const ncrDescription =
   "it taught me how to do research and learn myself. Yes, from there, MY GEEK JOURNEY STARTED!";
 
 
-export default class Internship extends Component {
+export default class Projects extends Component {
   constructor(props) {
     super(props);
 
@@ -50,34 +50,64 @@ export default class Internship extends Component {
         </div>
         <br />
         <div className="row">
-          <div className="center">
+          <div className="center hide-on-large-only">
             <Expandable
-              imgSrc="/img/miovision.png"
+              imgSrc="/img/sim4chat.png"
+              imgHeight={160}
               description={miovisionDescription}
               handleExpandingSectionChange={this.handleExpandingSectionChange}
-              isExpand={this.state.expandingSection === "/img/miovision.png"} />
+              isExpand={this.state.expandingSection === "/img/sim4chat.png"} />
+          </div>
+          <div className="center hide-on-med-and-down">
+            <Expandable
+              imgSrc="/img/sim4chat.png"
+              imgHeight={160}
+              description={miovisionDescription}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={true} />
           </div>
         </div>
-        <Divider />
         <br />
         <div className="row">
-          <Expandable
-            imgSrc="/img/dematic.png"
-            description={dematicDescription}
-            marginBelowPic={20}
-            handleExpandingSectionChange={this.handleExpandingSectionChange}
-            isExpand={this.state.expandingSection === "/img/dematic.png"} />
+          <div className="center hide-on-large-only">
+            <Expandable
+              imgSrc="/img/tic-tac-toe.png"
+              imgHeight={160}
+              description={dematicDescription}
+              marginBelowPic={20}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={this.state.expandingSection === "/img/tic-tac-toe.png"} />
+          </div>
+          <div className="center hide-on-med-and-down">
+            <Expandable
+              imgSrc="/img/tic-tac-toe.png"
+              imgHeight={160}
+              description={dematicDescription}
+              marginBelowPic={20}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={true} />
+          </div>
         </div>
-        <Divider />
-        <br />
         <br />
         <div className="row">
-          <Expandable
-            imgSrc="/img/ncr.png"
-            description={ncrDescription}
-            marginBelowPic={20}
-            handleExpandingSectionChange={this.handleExpandingSectionChange}
-            isExpand={this.state.expandingSection === "/img/ncr.png"} />
+          <div className="center hide-on-large-only">
+            <Expandable
+              imgSrc="/img/tote.png"
+              imgHeight={200}
+              description={ncrDescription}
+              marginBelowPic={20}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={this.state.expandingSection === "/img/tote.png"} />
+          </div>
+          <div className="center hide-on-med-and-down">
+            <Expandable
+              imgSrc="/img/tote.png"
+              imgHeight={200}
+              description={ncrDescription}
+              marginBelowPic={20}
+              handleExpandingSectionChange={this.handleExpandingSectionChange}
+              isExpand={true} />
+          </div>
         </div>
         <br />
       </div>
@@ -85,6 +115,6 @@ export default class Internship extends Component {
   }
 }
 
-Internship.childContextTypes = {
+Projects.childContextTypes = {
   muiTheme: React.PropTypes.object.isRequired,
 };
