@@ -43,7 +43,7 @@ export default class Projects extends Component {
               imgSrc="/img/tote.png"
               imgHeight={200}
               marginBelowPic={20}
-              title="Tote"
+              title="Tote - Personal Stylist"
               link="https://github.com/jeremychen0127/tote"/>
           </div>
         </div>
