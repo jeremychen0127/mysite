@@ -136,8 +136,8 @@ class Navbar extends Component {
             <li><a id="logo" href="/">Jeremy Chen</a></li>
             <li className={this.isActive('profile')}><a href="/profile">Profile</a></li>
             <li className={this.isActive('projects')}><a href="/projects">Projects</a></li>
-            <li className={this.isActive('internship')}><a href="/internship">Experience</a></li>
-            <li className={"right " + this.isActive('resume')}><a href="/resume">Resume</a></li>
+            <li className={this.isActive('internship')}><a href="/internship">Internship</a></li>
+            <li className={this.isActive('resume')}><a href="/resume">Resume</a></li>
           </div>
         </ul>
         {this.renderLeftNav()}
