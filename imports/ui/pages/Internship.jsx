@@ -9,7 +9,7 @@ import Divider from 'material-ui/Divider';
 // TODO: fetch from DB
 const miovisionDescription =
   "I am working in a new project initiated by the management and organizational development teams. " +
-  "They saw that the current market lacks of a system to manage and structure a company/organization well." +
+  "They saw that the current market lacks of a system to manage and structure a company/organization well. " +
   "That led to the birth of Teal. It is a system that not only has OKR and HR functionality but also " +
   "acts like an internal LinkedIn and Facebook. I am very passionate about the project and have implemented " +
   "a lot of main selling points of the product.";
