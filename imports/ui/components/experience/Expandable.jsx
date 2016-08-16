@@ -57,7 +57,9 @@ export default class Expandable extends Component {
                  height={140}
                  style={{borderRadius: '10px'}}/>
             <div className="center hide-on-large-only" style={{marginTop: this.props.marginBelowPic + 'px'}}>
-              <a style={{color: '#455a64', fontFamily: 'Patua One, cursive'}}>{this.state.isExpand ? 'Hide' : 'Show'} Details</a>
+              <a style={{color: '#455a64', fontFamily: 'Patua One, cursive', fontSize: '20px', textDecoration: 'underline'}}>
+                {this.state.isExpand ? 'Hide' : 'Show'} Details
+              </a>
             </div>
           </div>
           <div className="expDescription" style={{maxHeight: this.state.isExpand ? this.state.maxHeight : '0px'}}>
