@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 export default class ItemExternalDetails extends Component {
-
   render() {
     return (
       <div className="hoverable" style={{borderRadius: '20px'}}>
@@ -14,7 +13,7 @@ export default class ItemExternalDetails extends Component {
             <div className="center" style={{marginTop: this.props.marginBelowPic + 'px'}}>
               <div style={{color: '#455a64', fontFamily: 'Patua One, cursive'}}>
                 <div style={{fontSize: '25px'}}>{this.props.title}</div>
-                <div style={{fontSize: '20px', textDecoration: 'underline'}}>View Details @ Github</div>
+                <div style={{fontSize: '20px', textDecoration: 'underline'}}>Click to View Details @ Github</div>
               </div>
             </div>
           </a>
