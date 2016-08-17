@@ -186,8 +186,10 @@ export default class Profile extends Component {
             <div className="col m8 offset-m2 s10 offset-s1">
               <ul>
                 <li>Software Architecture and Design</li>
+                <li>Databases</li>
                 <li>Backend Development</li>
                 <li>Artificial Intelligence</li>
+                <li>Combinatorial Optimization</li>
               </ul>
               <br />
             </div>
