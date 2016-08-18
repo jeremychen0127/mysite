@@ -97,7 +97,7 @@ export default class Resume extends Component {
               <li>Design and implement a real-time organizational management system with Facebook-like and LinkedIn-like
                 features using Javascript, React, and MongoDB</li>
               <li>Implement visualizations of OKRs and organizational structures with D3.js</li>
-              <li>Improve system performance by reducing loading time by 90%</li>
+              <li>Improved system performance by reducing loading time by 90%</li>
               <li>Participate in at least 40% of software architectural and database design</li>
             </ul>
           </div>
