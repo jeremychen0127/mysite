@@ -185,7 +185,7 @@ export default class Resume extends Component {
             <h5><b>Pokemon Go TSP <a href="https://github.com/jeremychen0127/PokemonGo-TSP" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Improved efficient cooling schedules to reduce final distances by hundreds of meters on average</li>
+            <li>Implemented efficient cooling schedules to reduce final distances by hundreds of meters on average</li>
           </ul>
         </div>
 
