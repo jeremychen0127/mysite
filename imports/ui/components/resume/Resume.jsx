@@ -54,7 +54,6 @@ export default class Resume extends Component {
             <h5><b>Others & Soft Skills</b></h5>
             <ul>
               <li>Experienced with Git</li>
-              <li>Comfortable with Vim and IntelliJ</li>
               <li>Developed leadership skills through coordinating events in the university club</li>
               <li>Excellent group-working and communication skills developed through working with co-workers</li>
             </ul>
@@ -80,10 +79,10 @@ export default class Resume extends Component {
             </div>
             <div className="col m6 s12">
               <div className="right hide-on-small-only">
-                <h5>April. 2016 - Present</h5>
+                <h5>Apr. 2016 - Aug. 2016</h5>
               </div>
               <div className="hide-on-med-and-up">
-                <h5>April. 2016 - Present</h5>
+                <h5>Apr. 2016 - Aug. 2016</h5>
               </div>
             </div>
           </div>
@@ -94,11 +93,11 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Design and implement a real-time organizational management system with Facebook-like and LinkedIn-like
+              <li>Designed and implemented a real-time organizational management system with Facebook-like and LinkedIn-like
                 features using Javascript, React, and MongoDB</li>
-              <li>Implement visualizations of OKRs and organizational structures with D3.js</li>
+              <li>Implemented visualizations of OKRs and organizational structures with D3.js</li>
               <li>Improved system performance by reducing loading time by 90%</li>
-              <li>Participate in at least 40% of software architectural and database design</li>
+              <li>Participated in at least 40% of software architectural and database design</li>
             </ul>
           </div>
         </div>
@@ -174,11 +173,29 @@ export default class Resume extends Component {
 
         <div className="section-entry">
           <div className="row entry-title" style={style.reducedBottomMargin}>
-            <h5><b>Simple4Chat (ongoing) <a href="https://github.com/jeremychen0127/Simple4Chat" target="_blank">@GitHub</a></b></h5>
+            <h5><b>JSON and XML Converter <a href="https://github.com/jeremychen0127/Json2Xml2Csv" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Design and implement a chat-room-oriented messaging app</li>
-            <li>Design and implement a tagging feature for chat rooms</li>
+            <li>Implemented a simple and efficient converter to convert JSON files to and from XML files</li>
+          </ul>
+        </div>
+
+        <div className="section-entry">
+          <div className="row entry-title" style={style.reducedBottomMargin}>
+            <h5><b>Pokemon Go TSP <a href="https://github.com/jeremychen0127/PokemonGo-TSP" target="_blank">@GitHub</a></b></h5>
+          </div>
+          <ul>
+            <li>Improved efficient cooling schedules to reduce final distances by hundreds of meters on average</li>
+          </ul>
+        </div>
+
+        <div className="section-entry">
+          <div className="row entry-title" style={style.reducedBottomMargin}>
+            <h5><b>Simple4Chat <a href="https://github.com/jeremychen0127/Simple4Chat" target="_blank">@GitHub</a></b></h5>
+          </div>
+          <ul>
+            <li>Designed and implemented a chat-room-oriented messaging app</li>
+            <li>Designed and implemented a tagging feature for chat rooms</li>
           </ul>
         </div>
 
@@ -310,7 +327,6 @@ export default class Resume extends Component {
           {this.renderWorkExperience()}
           {this.renderProjects()}
           {this.renderEducation()}
-          {this.renderActivities()}
         </div>
       </div>
     );
