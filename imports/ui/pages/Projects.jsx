@@ -30,6 +30,15 @@ export default class Projects extends Component {
         <div className="row">
           <div className="center">
             <ItemExternalDetails
+              imgSrc="/img/pokemon-go-tsp.png"
+              title="Pokemon Go TSP (Contributor)"
+              link="https://github.com/jeremychen0127/PokemonGo-TSP"/>
+          </div>
+        </div>
+        <br />
+        <div className="row">
+          <div className="center">
+            <ItemExternalDetails
               imgSrc="/img/sim4chat.png"
               title="Simple 4 Chat Messaging App"
               link="https://github.com/jeremychen0127/Simple4Chat"/>
