@@ -8,7 +8,7 @@ import Paper from 'material-ui/Paper';
 const ReactHighcharts = require('react-highcharts');
 var Highcharts = require('highcharts');
 
-var styles = {
+const styles = {
   reducedBottomMargin: {
     marginBottom: '10px'
   },
