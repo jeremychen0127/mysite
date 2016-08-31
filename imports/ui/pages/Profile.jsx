@@ -114,8 +114,26 @@ const config = {
 };
 
 export default class Profile extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {windowWidth: window.innerWidth};
+
+    this.handleResize = (event) => {
+      this.setState({windowWidth: window.innerWidth});
+    };
+  }
+
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
   }
 
   renderChart() {
@@ -234,19 +252,19 @@ export default class Profile extends Component {
         </div>
         <br />
         <div className="row" style={styles.noBottomMargin}>
-          <div className={"col s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")}>
-            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+          <div className={"col s12 " + (this.state.windowWidth >= 1400 ? "l6" : "")}>
+            <div style={this.state.windowWidth < 1400 ? styles.paperSpacingBottom : {}}>
               {this.renderWhoAmI()}
             </div>
-            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+            <div style={this.state.windowWidth < 1400 ? styles.paperSpacingBottom : {}}>
               {this.renderBecameGeek()}
             </div>
           </div>
-          <div className={"col s12 " + ($(window).innerWidth() >= 1400 ? "l6" : "")}>
-            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+          <div className={"col s12 " + (this.state.windowWidth >= 1400 ? "l6" : "")}>
+            <div style={this.state.windowWidth < 1400 ? styles.paperSpacingBottom : {}}>
               {this.renderInterests()}
             </div>
-            <div style={$(window).innerWidth() < 1400 ? styles.paperSpacingBottom : {}}>
+            <div style={this.state.windowWidth < 1400 ? styles.paperSpacingBottom : {}}>
               {this.renderWhatIDo()}
             </div>
           </div>
