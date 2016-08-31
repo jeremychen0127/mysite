@@ -11,9 +11,26 @@ const styles = {
 };
 
 export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {windowWidth: window.innerWidth};
+
+    this.handleResize = (event) => {
+      this.setState({windowWidth: window.innerWidth});
+    };
+  }
 
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
   }
 
   renderTwoColumns() {
@@ -133,7 +150,7 @@ export default class Projects extends Component {
         </div>
         <br />
         {
-          $(window).innerWidth() >= 1400 ?
+          this.state.windowWidth >= 1400 ?
             this.renderTwoColumns()
           :
             this.renderOneColumn()
