@@ -21,6 +21,15 @@ export default class Projects extends Component {
         <div className="row">
           <div className="center">
             <ItemExternalDetails
+              imgSrc="/img/json2xml2csv.png"
+              title="JSON/XML/CSV Converter"
+              link="https://github.com/jeremychen0127/Json2Xml2Csv"/>
+          </div>
+        </div>
+        <br />
+        <div className="row">
+          <div className="center">
+            <ItemExternalDetails
               imgSrc="/img/sim4chat.png"
               title="Simple 4 Chat Messaging App"
               link="https://github.com/jeremychen0127/Simple4Chat"/>
