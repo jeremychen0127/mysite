@@ -53,6 +53,7 @@ export default class Internship extends Component {
             <div className="center hide-on-large-only">
               <Expandable
                 imgSrc="/img/miovision.png"
+                title="Full Stack Developer"
                 description={miovisionDescription}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}
                 isExpand={this.state.expandingSection === "/img/miovision.png"} />
@@ -60,6 +61,7 @@ export default class Internship extends Component {
             <div className="center hide-on-med-and-down">
               <Expandable
                 imgSrc="/img/miovision.png"
+                title="Full Stack Developer"
                 description={miovisionDescription}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}
                 isExpand={true} />
@@ -70,6 +72,7 @@ export default class Internship extends Component {
             <div className="center hide-on-large-only">
               <Expandable
                 imgSrc="/img/dematic.png"
+                title="Software Engineer"
                 description={dematicDescription}
                 marginBelowPic={20}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}
@@ -78,6 +81,7 @@ export default class Internship extends Component {
             <div className="center hide-on-med-and-down">
               <Expandable
                 imgSrc="/img/dematic.png"
+                title="Software Engineer"
                 description={dematicDescription}
                 marginBelowPic={20}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}
@@ -89,6 +93,7 @@ export default class Internship extends Component {
             <div className="center hide-on-large-only">
               <Expandable
                 imgSrc="/img/ncr.png"
+                title="Software Developer"
                 description={ncrDescription}
                 marginBelowPic={20}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}
@@ -97,6 +102,7 @@ export default class Internship extends Component {
             <div className="center hide-on-med-and-down">
               <Expandable
                 imgSrc="/img/ncr.png"
+                title="Software Developer"
                 description={ncrDescription}
                 marginBelowPic={20}
                 handleExpandingSectionChange={this.handleExpandingSectionChange}

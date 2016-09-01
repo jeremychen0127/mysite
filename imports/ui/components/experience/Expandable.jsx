@@ -56,7 +56,12 @@ export default class Expandable extends Component {
                  width={400}
                  height={140}
                  style={{borderRadius: '10px'}}/>
-            <div className="center hide-on-large-only" style={{marginTop: this.props.marginBelowPic + 'px'}}>
+            <div className="center" style={{marginTop: this.props.marginBelowPic + 'px'}}>
+              <div style={{color: '#455a64', fontFamily: 'Patua One, cursive'}}>
+                <div style={{fontSize: '30px'}}>{this.props.title}</div>
+              </div>
+            </div>
+            <div className="center hide-on-large-only">
               <a style={{color: '#455a64', fontFamily: 'Patua One, cursive', fontSize: '20px', textDecoration: 'underline'}}>
                 {this.state.isExpand ? 'Hide' : 'Show'} Details
               </a>
@@ -78,6 +83,7 @@ export default class Expandable extends Component {
 Expandable.propTypes = {
   imgSrc: React.PropTypes.string.isRequired,
   description: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired,
   handleExpandingSectionChange: React.PropTypes.func.isRequired,
   isExpand: React.PropTypes.bool.isRequired,
   marginBelowPic: React.PropTypes.number.isRequired,
