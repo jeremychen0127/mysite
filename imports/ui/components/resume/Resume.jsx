@@ -24,7 +24,7 @@ export default class Resume extends Component {
           <div className="col m6 s12 skill-set">
             <h5><b>Languages</b></h5>
             <ul>
-              <li>Proficient: Python, C/C++, Java, Javascript</li>
+              <li>Proficient: Python, C/C++, Java, JavaScript</li>
               <li>Intermediate: HTML5, CSS, SQL, Perl, Bash</li>
             </ul>
           </div>
@@ -32,7 +32,7 @@ export default class Resume extends Component {
           <div className="col m6 s12 skill-set">
             <h5><b>OS and Concepts</b></h5>
             <ul>
-              <li>Familiar with Linux, OS X, and Windows</li>
+              <li>Familiar with Linux, OS X, and Windows environments</li>
               <li>Working knowledge of networking concepts (TCP/IP, UDP, etc.)</li>
               <li>Excellent understanding of OOP, design patterns, and agile methodology</li>
             </ul>
@@ -43,9 +43,8 @@ export default class Resume extends Component {
           <div className="col m6 s12 skill-set">
             <h5><b>Web Development</b></h5>
             <ul>
-              <li>In-depth knowledge of React and JQuery</li>
-              <li>Experienced with Meteor and Node.js</li>
-              <li>Strong knowledge of MySQL, MongoDB</li>
+              <li>Experienced with AWS, Meteor, Node.js, React, and jQuery</li>
+              <li>Strong knowledge of MySQL and MongoDB</li>
               <li>Experience in Materialize, Material UI, and Bootstrap</li>
             </ul>
           </div>
@@ -55,7 +54,7 @@ export default class Resume extends Component {
             <ul>
               <li>Experienced with Git</li>
               <li>Developed leadership skills through coordinating events in the university club</li>
-              <li>Excellent group-working and communication skills developed through working with co-workers</li>
+              <li>Demonstrated communication skills in working with product managers and UX designers</li>
             </ul>
           </div>
         </div>
@@ -93,11 +92,12 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Designed and implemented a real-time organizational management system with Facebook-like and LinkedIn-like
-                features using Javascript, React, and MongoDB</li>
-              <li>Implemented visualizations of OKRs and organizational structures with D3.js</li>
-              <li>Improved system performance by reducing loading time by 90%</li>
-              <li>Participated in at least 40% of software architectural and database design</li>
+              <li>Designed and implemented tagging, searching, custom fields, role endorsement, and following and
+                notification functionality of a real-time organizational management system using JavaScript, EC2, Meteor,
+                Node.js, React, and MongoDB</li>
+              <li>Implemented visualizations of OKRs and organizational structures using D3.js</li>
+              <li>Improved system performance by reducing 90% of loading time by optimizing data requests and caching</li>
+              <li>Minimalized the UI to ease the learning of the management system for new customers</li>
             </ul>
           </div>
         </div>
@@ -123,11 +123,10 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Designed and implemented a system which collapses the configuration files from more than
-                10,000 lines to approximately 4,000 lines and expands them back using Java</li>
-              <li>Implemented automated deployment of the existing products and the third-party software,
-                reducing the time to create and configure a testing server from hours to 30-35 minutes</li>
-              <li>Implemented a system which analyzes and visualizes metrics using Node.js and D3.js</li>
+              <li>Improved the performance of product configuration by compressing configuration files to 40% using Java</li>
+              <li>Implemented a system which analyzes and visualizes testing metrics to show the quantity and quality of
+                product testing using Node.js and D3.js</li>
+              <li>Implemented automated deployment to improve the efficiency and effectiveness of product testing by 70%</li>
             </ul>
           </div>
         </div>
@@ -153,8 +152,8 @@ export default class Resume extends Component {
 
           <div className="row description">
             <ul>
-              <li>Designed and implemented the backend of an ATM testing framework using Perl</li>
-              <li>Co-designed and implemented a GUI for monitoring and visualizing testing data</li>
+              <li>Designed and implemented the parser of an ATM testing framework using Perl</li>
+              <li>Designed and implemented a GUI for monitoring and visualizing testing data using HTML and CSS</li>
             </ul>
           </div>
         </div>
@@ -173,6 +172,16 @@ export default class Resume extends Component {
 
         <div className="section-entry">
           <div className="row entry-title" style={style.reducedBottomMargin}>
+            <h5><b>Tote - AngelHack Hackathon <a href="https://github.com/jeremychen0127/tote.git" target="_blank">@GitHub</a></b></h5>
+          </div>
+          <ul>
+            <li>Implemented mix-and-match feature for dressing using JavaScript, Meteor, React, and MongoDB</li>
+            <li>Designed and implemented 95% of the UI components of the application using React</li>
+          </ul>
+        </div>
+
+        <div className="section-entry">
+          <div className="row entry-title" style={style.reducedBottomMargin}>
             <h5><b>JSON and XML Converter <a href="https://github.com/jeremychen0127/Json2Xml2Csv" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
@@ -185,7 +194,8 @@ export default class Resume extends Component {
             <h5><b>Pokemon Go TSP <a href="https://github.com/jeremychen0127/PokemonGo-TSP" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Implemented efficient cooling schedules to reduce final distances by hundreds of meters on average</li>
+            <li>Contributed to a system which generates efficient routes to collect pokemons using simulated annealing</li>
+            <li>Implemented efficient cooling schedules to reduce final route length by hundreds of meters using Python</li>
           </ul>
         </div>
 
@@ -194,8 +204,7 @@ export default class Resume extends Component {
             <h5><b>Simple4Chat <a href="https://github.com/jeremychen0127/Simple4Chat" target="_blank">@GitHub</a></b></h5>
           </div>
           <ul>
-            <li>Designed and implemented a chat-room-oriented messaging app</li>
-            <li>Designed and implemented a tagging feature for chat rooms</li>
+            <li>Implemented a chat-room-oriented messaging application using JavaScript, Meteor, React, and MongoDB</li>
           </ul>
         </div>
 
@@ -206,16 +215,6 @@ export default class Resume extends Component {
           <ul>
             <li>Implemented a tic-tac-toe game using MVC architecture in C++</li>
             <li>Implemented an unbeatable AI player using minimax algorithm</li>
-          </ul>
-        </div>
-
-        <div className="section-entry">
-          <div className="row entry-title" style={style.reducedBottomMargin}>
-            <h5><b>Tote (AngelHack) <a href="https://github.com/jeremychen0127/tote.git" target="_blank">@GitHub</a></b></h5>
-          </div>
-          <ul>
-            <li>Implemented mix-n-match for dressing</li>
-            <li>Designed and implemented 95% of the UI components using React</li>
           </ul>
         </div>
 
@@ -269,6 +268,7 @@ export default class Resume extends Component {
             <ul>
               <li>GPA (US Scale): 4.0</li>
               <li>President's Scholarship of Distinction (95+)</li>
+              <li>President's Research Award</li>
               <li>Math Faculty Scholarship</li>
             </ul>
           </div>
